@@ -2,7 +2,7 @@
 * GitHub의 소스를 바탕으로 Node.js의 Express 서버를 배포(호스팅) 할 수 있다.
 
 ## Heroku 프로젝트 생성
-https://www.heroku.com/
+https://www.heroku.com
 
 ```sh
 # 회원가입
@@ -50,4 +50,3 @@ app.listen(process.env.PORT, function() {
 # 배포
 홈페이지 > 로그인 > 해당 프로젝트 > Deploy > GitHub > Deploy Branch
 ```
-
