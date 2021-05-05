@@ -95,6 +95,8 @@ git commit -m "b1 resolved"
 git push
 ```
 
+* ❔ 실습: `memberA/README.md`에서 `memberA: a2` 입력 후 push 하기 (충돌 해결 하기)
+* ❔ 실습: `memberB`에서 `B.txt` 파일을 만들고 push 하기
 * ❕ 여러 사람과 프로젝트를 같이 한다면, 항상 `push`전에 `pull` 먼저 해야 한다
 
 ## stash
