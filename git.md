@@ -99,6 +99,8 @@ git push
 * ❔ 실습: `memberB`에서 `B.txt` 파일을 만들고 push 하기
 * ❕ 여러 사람과 프로젝트를 같이 한다면, 항상 `push`전에 `pull` 먼저 해야 한다
 
+## 브랜치 생성과 머지
+
 ## stash
 ```sh
 # 현재 변경 내역 stash 생성
