@@ -100,6 +100,54 @@ git push
 * ❕ 여러 사람과 프로젝트를 같이 한다면, 항상 `push`전에 `pull` 먼저 해야 한다
 
 ## 브랜치 생성과 머지
+```sh
+git branch f/memberA
+git checkout f/memberA
+```
+
+memberA/README.md
+```md
+f/memberA: a2
+```
+
+```sh
+git status
+git add .
+git commit -m "a2"
+git pull
+git push
+```
+
+memberB/README.md
+```md
+memberB: b1
+```
+
+```sh
+git status
+git add .
+git commit -m "b2"
+git pull
+git push
+```
+
+### 브랜치 머지
+```sh
+git merge origin/f/memberA
+```
+```md
+<<<<<<< HEAD
+memberB: b1
+=======
+f/memberA: a2
+>>>>>>> origin/f/memberA
+```
+
+* ❔ 실습: 충돌 해결 후 push
+* ❔ 실습: `memberA`에서 `origin/master` merge 하기
+* ❔ 실습: `f/memberA: a3` 다시 해보기
+
+## Pull Request
 
 ## stash
 ```sh
