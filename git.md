@@ -175,11 +175,56 @@ Create pull request
 
 ## Rebase
 * commit 합치기, 이전 commit 내역 수정등, 주로 이전에 실수를 수정하기 위해서 쓰인다
-* 하지만 실재로는 이전 내역이 수정 되는것이 아니기 때문에 push된 내역은 rebase에 포함하지 않아야 한다
+* 하지만 실재로는 이전 내역이 수정 되는것이 아니고 새로 생성하기 때문에 push된 내역은 rebase에 포함하지 않아야 한다
 * 따라서 push전 commit들에 대해서만 rebase를 사용하는게 바람직하다
 
-## 이전 commit 이름 바꾸기
+### 이전 commit 이름 바꾸기
+* 로컬 commit 2개 하기
+```sh
+git rebase -i HEAD~2
+  # vi 에디터가 실행 됨
+```
+```vi
+# i 키를 눌러서 INSERT 모드로 변경
+# 첫째줄 pick을 edit로 수정
+# esc 키를 눌러 INSERT 모드 종료
+# :wq
+  # 저장하고 종료하기
+```
+```sh
+git commit --amend -m "커밋 메시지 수정"
+git rebase --continue
+```
 
+### 방금 commit과 이전 commit 합치기
+```sh
+git rebase -i HEAD~2
+```
+```vi
+# 둘째줄 pick을 fixup으로 수정 후 저장 종료
+```
+
+### 이전 commit 내용 수정하기
+* 로컬 commit 3개 하기
+```sh
+git rebase -i HEAD~3
+```
+```vi
+# 첫째줄 pick을 edit으로 수정 후 저장 종료
+```
+```sh
+# 파일 수정
+git add .
+git commit -m "중간에 끼워 넣을 commit명"
+git rebase --continue
+```
+#### 충돌이 발생한 경우
+```sh
+# 파일 충돌 해결
+git add .
+git commit -m "충돌 해결 commit명"
+git rebase --continue
+```
 
 ## stash
 ```sh
