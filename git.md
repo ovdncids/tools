@@ -264,7 +264,9 @@ git reset ORIG_HEAD
 git update-ref -d HEAD
 ```
 
-## stash
+## Stash
+* 현재의 작업 내역을 commit 하지 않고 따로 보관 한다
+* 현재 작업을 일시 중단하고, 새로운 작업이 우선 될경우, 작업 내역을 commit 하지 않고 따로 보관 할 때 쓰임
 ```sh
 # 현재 변경 내역 stash 생성
 git stash
