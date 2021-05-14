@@ -148,6 +148,30 @@ f/memberA: a2
 * ❔ 실습: `f/memberA: a3` 다시 해보기
 
 ## Pull Request
+* 주로 master 브랜치에 작업 브랜치를 머지할때 쓰인다
+* GitHub(https://github.com/{유저}/{리포지토리}/pulls)페이지에서 요청 할 수 있다
+* 담당자 또는 콜라보레이터들에게 코드 리뷰를 받을 수 있다
+* 담당자가 머지 승인 또는 거절을 할 수 있다
+```github
+# 새로운 Pull request를 생성하는 페이지로 이동
+New pull request
+
+# base: 작업물을 받을 브렌치, compare: 작업한 브랜치
+base: master <- compare: 작업 브랜치
+  # 선택 후 'There isn’t anything to compare.'가 나오면 f/memberA 브랜치에서 작업 후 push
+
+# 작업한 내역이 있을 경우 Open a pull request 페이지로 이동
+Create pull request
+
+Pull request 이름과 comment 쓰기
+Reviewers 리뷰어(옵션)
+Assignees 담당자(옵션)
+# 작업한 내용을 확인 후
+Create pull request
+
+# 이제 담당자 또는 콜라보레이터들이 확인 후 댓글을 남길 수 있다
+이상이 없다면 Merge pull request 실행
+```
 
 ## stash
 ```sh
