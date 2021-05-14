@@ -120,7 +120,7 @@ git push
 
 memberB/README.md
 ```md
-memberB: b1
+memberB: b2
 ```
 
 ```sh
@@ -196,7 +196,7 @@ git commit --amend -m "커밋 메시지 수정"
 git rebase --continue
 ```
 
-### 방금 commit과 이전 commit 합치기
+###  commit과 이전 commit 합치기
 ```sh
 git rebase -i HEAD~2
 ```
@@ -224,6 +224,44 @@ git rebase --continue
 git add .
 git commit -m "충돌 해결 commit명"
 git rebase --continue
+```
+
+## 로컬 commit을 최상단으로 올리기
+memberA
+```sh
+git checkout master
+# 파일 하나 새로 만들어서 commit
+```
+
+memberB/README.md
+```sh
+# 파일 수정 후 commit push
+```
+
+memberA
+```sh
+git pull
+git rebase origin/master
+```
+
+## Reset
+* 되돌릴때 주로 많이
+
+### 마지막 commit 삭제
+```sh
+git reset HEAD~
+# or
+git reset --hard HEAD~1
+```
+
+### 마지막 reset 취소
+```sh
+git reset ORIG_HEAD
+```
+
+### 처음 commit 삭제
+```sh
+git update-ref -d HEAD
 ```
 
 ## stash
