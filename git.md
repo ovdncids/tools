@@ -196,7 +196,7 @@ git commit --amend -m "커밋 메시지 수정"
 git rebase --continue
 ```
 
-###  commit과 이전 commit 합치기
+### 마지막 commit과 이전 commit 합치기
 ```sh
 git rebase -i HEAD~2
 ```
@@ -245,7 +245,7 @@ git rebase origin/master
 ```
 
 ## Reset
-* 되돌릴때 주로 많이
+* 주로 되돌릴 때 많이 사용한다
 
 ### 마지막 commit 삭제
 ```sh
