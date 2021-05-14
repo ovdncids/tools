@@ -2,7 +2,7 @@
 
 ## commit명 바꾸기
 ```sh
-git commit git commit --amend -m ""
+git commit --amend -m ""
 ```
 
 # GitHub
@@ -172,6 +172,14 @@ Create pull request
 # 이제 담당자 또는 콜라보레이터들이 확인 후 댓글을 남길 수 있다
 이상이 없다면 Merge pull request 실행
 ```
+
+## Rebase
+* commit 합치기, 이전 commit 내역 수정등, 주로 이전에 실수를 수정하기 위해서 쓰인다
+* 하지만 실재로는 이전 내역이 수정 되는것이 아니기 때문에 push된 내역은 rebase에 포함하지 않아야 한다
+* 따라서 push전 commit들에 대해서만 rebase를 사용하는게 바람직하다
+
+## 이전 commit 이름 바꾸기
+
 
 ## stash
 ```sh
