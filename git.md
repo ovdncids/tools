@@ -173,6 +173,26 @@ Create pull request
 이상이 없다면 Merge pull request 실행
 ```
 
+## Reset
+* 주로 되돌릴 때 많이 사용한다
+
+### 마지막 commit 삭제
+```sh
+git reset HEAD~
+# or
+git reset --hard HEAD~1
+```
+
+### 마지막 reset 취소
+```sh
+git reset ORIG_HEAD
+```
+
+### 처음 commit 삭제
+```sh
+git update-ref -d HEAD
+```
+
 ## Rebase
 * commit 합치기, 이전 commit 내역 수정등, 주로 이전에 실수를 수정하기 위해서 쓰인다
 * 하지만 실재로는 이전 내역이 수정 되는것이 아니고 새로 생성하기 때문에 push된 내역은 rebase에 포함하지 않아야 한다
@@ -242,26 +262,6 @@ memberA
 ```sh
 git pull
 git rebase origin/master
-```
-
-## Reset
-* 주로 되돌릴 때 많이 사용한다
-
-### 마지막 commit 삭제
-```sh
-git reset HEAD~
-# or
-git reset --hard HEAD~1
-```
-
-### 마지막 reset 취소
-```sh
-git reset ORIG_HEAD
-```
-
-### 처음 commit 삭제
-```sh
-git update-ref -d HEAD
 ```
 
 ## Stash
