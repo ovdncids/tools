@@ -8,7 +8,7 @@ command + shift + p(명령 팔레트)
 셸 명령: PATH에 'code' 명령 설치
 ```
 
-### 현재 경로 Finder에서 열기
+### Terminal 현재 경로를 Finder로 열기
 ```sh
 open .
 ```
