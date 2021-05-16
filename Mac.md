@@ -31,5 +31,13 @@ open -n -b "com.microsoft.VSCode" --args "$*"
   # Finder가 이미 실행 되었다면 command + w 종료 후 재실행
 ```
 
+## Shell 변경하기
+```sh
+# bash -> zsh
+chsh -s /bin/zsh
+# zsh -> bash
+chsh -s /bin/bash
+```
+
 ## Mac용 토렌트
 https://transmissionbt.com/download
