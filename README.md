@@ -7,3 +7,5 @@
 * [Windows](Windows.md)
 
 * [Mac](Mac.md)
+
+* [Intellij](Intellij.md)
