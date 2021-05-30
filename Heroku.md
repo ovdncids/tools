@@ -22,8 +22,14 @@ npm install -g heroku
 # 로그인
 heroku login
 
+# 프로젝트 리스트 보기
+heroku apps
+
+# 프로젝트 선택
+heroku git:remote -a {프로젝트 리스트 안에 있는 프로젝트 선택}
+
 # 로그 보기
-heroku logs
+heroku logs -t
 ```
 
 ## Backend Server
@@ -50,3 +56,15 @@ app.listen(process.env.PORT, function() {
 # 배포
 홈페이지 > 로그인 > 해당 프로젝트 > Deploy > GitHub > Deploy Branch
 ```
+
+## Django
+```sh
+# Django shell 실행
+heroku run python manage.py shell
+
+# Shell 실행
+heroku run bash
+```
+* https://devcenter.heroku.com/articles/getting-started-with-python
+* https://egg-money.tistory.com/115
+
