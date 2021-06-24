@@ -69,6 +69,8 @@ heroku run bash
 * https://egg-money.tistory.com/115
 
 ## MySQL
+* https://m.blog.naver.com/gofkdvjvl/222041889095
+
 ### Add-ons 선택
 ```
 Overview -> Configue Add-ons -> Find more Add-ons -> ClearDB MySQL -> Install ClearDB My SQL
