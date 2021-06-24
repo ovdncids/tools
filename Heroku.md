@@ -68,3 +68,25 @@ heroku run bash
 * https://devcenter.heroku.com/articles/getting-started-with-python
 * https://egg-money.tistory.com/115
 
+## MySQL
+### Add-ons 선택
+```
+Overview -> Configue Add-ons -> Find more Add-ons -> ClearDB MySQL -> Install ClearDB My SQL
+-> Ignite - Free 선택
+-> App to provision to: 사용할 프로젝트 선택
+-> Submit Order Form 누를때 경고 토스트 뜨면 카드 등록 해야함
+```
+
+### 카드 등록
+```
+Account settings -> Billing -> Credit card -> 카드등록
+이제 다시 위의 Submit Order Form 선택
+```
+
+### 생성된 ClearDB MySQL 정보보기
+```
+Resources -> ClearDB MySQL -> NAVISITE 이동후 Name 선택 -> System Information
+-> Username, Password 확인
+
+Settings -> Reveal Config Vars -> mysql://... (이렇게 MySQL 접속 정보를 볼 수 있다.)
+```
