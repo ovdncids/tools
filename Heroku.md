@@ -27,6 +27,10 @@ heroku apps
 
 # 프로젝트 선택
 heroku git:remote -a {프로젝트 리스트 안에 있는 프로젝트 선택}
+## .git/config (아래 부분을 지우면 default 프로젝트가 삭제 된다)
+[remote "heroku"]
+	url = https://git.heroku.com/{프로젝트}.git
+	fetch = +refs/heads/*:refs/remotes/heroku/*
 
 # 로그 보기
 heroku logs -t
@@ -59,6 +63,8 @@ app.listen(process.env.PORT, function() {
 
 ## Django
 ```sh
+# heroku create (프로젝트를 생성하지 말고, 위에서 프로젝트를 선택 하자)
+
 # Django shell 실행
 heroku run python manage.py shell
 
