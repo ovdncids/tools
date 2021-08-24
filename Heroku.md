@@ -39,6 +39,12 @@ heroku logs -t
 ## Backend Server
 * [Download](https://github.com/ovdncids/vue-curriculum/raw/master/download/express-server.zip)
 
+### public 경로 설정
+```js
+// Set public
+app.use('/', express.static('public'));
+```
+
 ### Backend Server와 Heroku 연동을 위한 소스 수정
 ```diff
 - global.location = new URL('http://localhost:3100');
