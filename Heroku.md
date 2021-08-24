@@ -41,9 +41,11 @@ heroku logs -t
 
 ### Backend Server와 Heroku 연동을 위한 소스 수정
 ```diff
-- app.listen(process.env.PORT, function() {
+- global.location = new URL('http://localhost:3100');
+- app.listen(global.location.port, function() {
 ```
 ```js
+global.location = new URL('http://localhost:3100');
 if (process.env.PORT) {
   global.location = new URL('https://프로젝트명.herokuapp.com');
 } else {
