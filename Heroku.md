@@ -60,6 +60,22 @@ if (process.env.PORT) {
 app.listen(process.env.PORT, function() {
 ```
 
+## React 환경 설정
+.env.development
+```env
+REACT_APP_BASE_URL=http://localhost:3100
+```
+
+.env.production
+```env
+REACT_APP_BASE_URL=https://프로젝트명.herokuapp.com
+```
+
+src/stores/MembersStore.js
+```js
+axios.defaults.baseURL = process.env.REACT_APP_BASE_URL;
+```
+
 ## Githu와 연결
 ```sh
 # 연결
