@@ -43,7 +43,7 @@ docker rm httpd1
 docker run --name httpd2 -p 8880:80 httpd
 
 # 호스트와 컨테이너 사아의 포트 포워딩과 파일 연결 하는 httpd2 컨테이너 생성
-docker run --name httpd3 -p 8880:80 -v ~/httpd3:/usr/local/apache2/htdocs httpd
+docker run --name httpd3 -p 8880:80 -v {호스트 경로}:/usr/local/apache2/htdocs httpd
 ```
 
 ## 컨테이너에 터미널 연결
