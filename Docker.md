@@ -26,12 +26,18 @@ docker ps
 
 # 아파치 컨테이너를 httpd1 이름으로 생성
 docker run --name httpd1 httpd
+  # 컨테이너 생성과 동시에 현재 터미널에서 컨테이너 실행
+docker run --name httpd1 -d httpd
+  # 컨테이너 생성 후 데몬으로 실행
 
-# 컨테이너 httpd1 실행
-docker start httpd1
+# 컨테이너 log 보기
+docker logs -f httpd1
 
 # 컨테이너 httpd1 중지
 docker stop httpd1
+
+# 컨테이너 httpd1 실행
+docker start httpd1
 
 # 컨테이너 httpd1 삭제
 docker rm httpd1
