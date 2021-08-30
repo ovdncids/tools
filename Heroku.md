@@ -42,7 +42,7 @@ heroku logs -t
 ### public 경로 설정
 ```js
 // Set public
-app.use('/', express.static('public'));
+app.use('/', express.static('build'));
 ```
 
 ### Backend Server와 Heroku 연동을 위한 소스 수정
