@@ -40,6 +40,7 @@ heroku logs -t
 * [Download](https://github.com/ovdncids/vue-curriculum/raw/master/download/express-server.zip)
 
 ### public 경로 설정
+index.js
 ```js
 // Set public
 app.use('/', express.static('build'));
