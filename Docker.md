@@ -2,6 +2,10 @@
 * 가상 컨테이너를 활용하여 원하는 서비스(웹서버, DB등)를 최소화 하여 설치 할 수 있다.
 * https://www.youtube.com/watch?v=Ps8HDIAyPD0&list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf
 
+# Docker hub
+* Docker Image들의 모음
+* https://hub.docker.com
+
 ## 설치
 https://docs.docker.com/get-docker
 
