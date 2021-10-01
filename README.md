@@ -10,4 +10,4 @@
 
 * [Heroku](Heroku.md)
 
-* [Intellij](Intellij.md)
+* [IntelliJ](IntelliJ.md)
