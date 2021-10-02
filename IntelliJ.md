@@ -10,8 +10,8 @@ Setting > Keymap > Plugins > Terminal > Switch Focus To Editor
 * https://freedeveloper.tistory.com/222
 ```sh
 # 주석 들여쓰기
-Settings -> Editor -> Java -> Wrapping and Braces -> Keep when reformating -> Comment at first column -> 해제
+Settings > Editor > Java > Wrapping and Braces > Keep when reformating > Comment at first column > 해제
 
 # 주석 스페이스 하나 넣기
-Settings -> Editor -> Java -> Code  Generation -> Comment Code -> Add a space at comment start -> 선택
+Settings > Editor > Java > Code  Generation > Comment Code > Add a space at comment start > 선택
 ```
