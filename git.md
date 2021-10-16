@@ -276,7 +276,7 @@ git stash save ""
 # stash 리스트 보기
 git stash list
 
-# stash 꺼기
+# stash 꺼내기
 git stash apply ${0}
 
 # stash 꺼내고 지우기
