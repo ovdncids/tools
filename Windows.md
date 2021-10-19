@@ -3,7 +3,7 @@
 ## Microsoft .NET Framework 3.5
 ```cmd
 DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:d:\sources\sxs
-# 시디롬 드라이버가 d:\ 드라이브인 경우
+  # 시디롬 드라이버가 d:\ 드라이브인 경우
 ```
 
 ## 노트북 펜소음 줄이기
