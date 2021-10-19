@@ -28,6 +28,8 @@ powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 ```cmd
 @echo off
 rem 'rem은 주석'
+rem sc query wiredService
+rem sc query "CCDN Service"
 sc query NATService
 set /p confirmStr=Do you want to delete "NATService" service?(y/n)
 if /i "%confirmStr%" == "y" goto YES
