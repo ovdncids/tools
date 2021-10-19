@@ -23,3 +23,26 @@ powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 개인 정보 설정 -> 백그라운드 앱
 ```
 -->
+
+## .cmd 파일
+```cmd
+@echo off
+rem 'rem은 주석'
+sc query NATService
+set /p confirmStr=Do you want to delete "NATService" service?(y/n)
+if /i "%confirmStr%" == "y" goto YES
+if /i not "%confirmStr%" == "y" goto NO
+
+:YES
+echo "NATService" is deleting
+sc stop NATService
+sc delete NATService
+
+:NO
+echo.
+
+pause
+
+rem "윈도우 업데이트 서비스 확인"
+sc query wuauserv
+```
