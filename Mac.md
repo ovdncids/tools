@@ -38,7 +38,7 @@ chsh -s /bin/zsh
 # zsh -> bash
 chsh -s /bin/bash
 ```
-* [Shell .zshrc, .bashrc 차이](https://github.com/ovdncids/python-curriculum/blob/master/PythonInstall.md)
+* [Shell .zshrc, .bashrc 차이](https://github.com/ovdncids/python-curriculum/blob/master/PythonInstall.md#mac)
 
 ## Mac용 토렌트
 https://transmissionbt.com/download
