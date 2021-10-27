@@ -15,3 +15,11 @@ Settings > Editor > Java > Wrapping and Braces > Keep when reformating > Comment
 # 주석 스페이스 하나 넣기
 Settings > Editor > Java > Code  Generation > Comment Code > Add a space at comment start > 선택
 ```
+
+## snake_case to camelCase
+```sh
+Setting > Plugins > CamelCase > Install
+
+# 사용
+Shift + Alt + U
+```
