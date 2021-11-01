@@ -20,6 +20,13 @@ Asus F5SR <- 선택
 Target fan spped: 25%
 ```
 
+## 크롬 인증서 오류
+```regedit
+HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\AuthRoot
+1 -> 0
+```
+* https://wuimer.tistory.com/entry/%ED%81%AC%EB%A1%AC-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EC%98%A4%EB%A5%98-%EC%97%B0%EA%B2%B0%EC%9D%B4-%EB%B9%84%EA%B3%B5%EA%B0%9C%EB%A1%9C-%EC%84%A4%EC%A0%95%EB%90%98%EC%96%B4-%EC%9E%88%EC%A7%80-%EC%95%8A%EC%8A%B5%EB%8B%88%EB%8B%A4-%ED%95%B4%EA%B2%B0%EB%B2%95
+
 <!--
 ## 최고의 성능
 ```cmd
