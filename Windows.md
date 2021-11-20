@@ -19,7 +19,7 @@ https://github.com/hirschmann/nbfc
 Asus F5SR <- 선택
 Target fan spped: 25%
 ```
-* 노트북 쿨러는 쉽게 휠러를 불리 할 수 있다. 청소를 쉽게 할 수 있다.
+* 노트북 쿨러는 쉽게 휠러를 분리 할 수 있다. 청소를 쉽게 할 수 있다.
 
 ## 크롬 인증서 오류
 ```regedit
