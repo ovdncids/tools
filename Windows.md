@@ -10,7 +10,7 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:d:\so
 ```cmd
 제어판 -> 전원 옵션 -> 프로세서 전원 관리 -> 최소 프로세서 상태 -> 1%
                                         -> 시스템 냉각 정책 -> 수동
-                                        -> 최대 프로세서 상태 -> 53%
+                                        -> 최대 프로세서 상태 -> 99%
 ```
 
 ### 노트북 펜 컨트롤
