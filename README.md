@@ -6,8 +6,10 @@
 
 * [GIT](git.md)
 
+* [VSCode](VSCode.md)
+
+* [IntelliJ](IntelliJ.md)
+
 * [Docker](Docker.md)
 
 * [Heroku](Heroku.md)
-
-* [IntelliJ](IntelliJ.md)
