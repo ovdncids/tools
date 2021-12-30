@@ -23,3 +23,8 @@ Setting > Plugins > CamelCase > Install
 # 사용
 Shift + Alt + U
 ```
+
+## Commit 할때 문법 체크 안하기
+```sh
+Setting > Version Control > Commit > Analyze code > 해제
+```
