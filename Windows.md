@@ -13,6 +13,14 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:d:\so
                                         -> 최대 프로세서 상태 -> 99%
 ```
 
+### 프로세서 성능 강화 모드
+```registry
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\be337238-0d82-4146-a960-4f3749d470c7
+Attributes -> 2
+
+제어판 -> 전원 옵션 -> 프로세서 전원 관리 -> 프로세서 성능 강화 모드 -> 효율적으로 활성화됨
+```
+
 ### 노트북 펜 컨트롤
 https://github.com/hirschmann/nbfc
 ```cmd
