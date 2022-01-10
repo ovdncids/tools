@@ -13,3 +13,5 @@
 * [Docker](Docker.md)
 
 * [Heroku](Heroku.md)
+
+* [Chrome](Chrome.md)
