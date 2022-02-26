@@ -28,3 +28,9 @@ Shift + Alt + U
 ```sh
 Setting > Version Control > Commit > Analyze code > 해제
 ```
+
+## MyBatis에서 xml 파일 쉽게 열기
+```sh
+Setting > Plugins > iBATIS/MyBatis mini-plugin
+재시작
+```
