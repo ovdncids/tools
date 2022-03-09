@@ -73,3 +73,8 @@ pause
 rem "윈도우 업데이트 서비스 확인"
 sc query wuauserv
 ```
+
+<!--
+## DirectX (최종)
+* https://www.microsoft.com/ko-kr/download/confirmation.aspx?id=35
+-->
