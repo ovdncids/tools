@@ -10,6 +10,8 @@
 
 * [IntelliJ](IntelliJ.md)
 
+* [Eclipse](https://github.com/ovdncids/java-curriculum/tree/master/download/eclipse)
+
 * [Docker](Docker.md)
 
 * [Heroku](Heroku.md)
