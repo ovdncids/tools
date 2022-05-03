@@ -17,3 +17,5 @@
 * [Heroku](Heroku.md)
 
 * [Chrome](Chrome.md)
+
+* [iPhone 단축키](iPhoneShortcuts.md)
