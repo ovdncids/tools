@@ -15,3 +15,9 @@
 ```
 
 ## 단축어 설정
+### Youtube 열기
+```sh
+나의 단축어 > + > 단축어 이름 > 'Youtube 열기' > 동작 추가
+  카테고리 > 웹 > URL 열기 > `URL` > https://www.youtube.com/watch?v=rixtyCYRYkw
+  실행 > 'Youtube 열기'이(가) www.youtube.com을(를)  열도록 허용하겠습니까? > 허용
+```
