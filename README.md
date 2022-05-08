@@ -18,4 +18,4 @@
 
 * [Chrome](Chrome.md)
 
-* [iPhone 단축키](iPhoneShortcuts.md)
+* [iPhone 단축어](iPhoneShortcuts.md)
