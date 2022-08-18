@@ -43,3 +43,8 @@
     }
 }
 ```
+
+## Prettier - Code formatter
+* `Prettier - Code formatter` 확장 프로그램 설치
+* Ctrl + , -> format -> 사용자 -> 텍스트 편집기 -> Editor: Default Formatter -> Prettier - Code formatter
+* `test.json` 파일을 만들어서 테스트
