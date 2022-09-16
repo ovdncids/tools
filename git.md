@@ -288,3 +288,10 @@ git stash drop ${1}
 # stash 모두 지우기
 git stash clear
 ```
+
+## GitHub Pull requests 기본 메시지
+.github/pull_request_template.md
+```md
+# CheckList
+- [ ] 정상 코드 동작 확인
+```
