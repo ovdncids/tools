@@ -40,5 +40,11 @@ chsh -s /bin/bash
 ```
 * [Shell .zshrc, .bashrc 차이](https://github.com/ovdncids/python-curriculum/blob/master/PythonInstall.md#mac)
 
+## mds_store 죽이기 (Spotlight 인덱싱)
+* https://www.charlezz.com/?p=44913
+```sh
+sudo mdutil -a -i off
+```
+
 ## Mac용 토렌트
 https://transmissionbt.com/download
