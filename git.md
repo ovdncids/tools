@@ -278,6 +278,7 @@ git stash list
 
 # stash 꺼내기
 git stash apply ${0}
+## git stash apply 0
 
 # stash 꺼내고 지우기
 git stash pop ${0}
