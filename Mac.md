@@ -48,3 +48,7 @@ sudo mdutil -a -i off
 
 ## Mac용 토렌트
 https://transmissionbt.com/download
+
+## Boot Camp
+* 부팅 USB를 꼽고 재부팅 후 `option` 키를 누르면, USB 부팅 메뉴가 추가 된다.
+* [드라이버](https://support.apple.com/kb/DL1721?locale=ko_KR&viewlocale=ko_KR)
