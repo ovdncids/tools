@@ -290,6 +290,16 @@ git stash drop ${1}
 git stash clear
 ```
 
+## reset --hard로 지운 커밋 살리기
+* https://seosh817.tistory.com/297
+```sh
+# 해당 브렌치의 히스토리 보기
+git reflog 브렌치명
+
+# 해당 커밋 살리기
+git reset --hard 커밋아이디
+```
+
 ## GitHub Pull requests 기본 메시지
 .github/pull_request_template.md
 ```md
