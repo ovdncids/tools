@@ -18,6 +18,7 @@ https://devcenter.heroku.com/articles/heroku-cli
 ```sh
 # 설치
 npm install -g heroku
+## 설치 안되면 위에 링크에서 다운로드
 
 # 로그인
 heroku login
@@ -112,7 +113,7 @@ Overview -> Configue Add-ons -> Find more Add-ons -> ClearDB MySQL -> Install Cl
 
 ### 카드 등록
 ```
-Account settings -> Billing -> Credit card -> 카드등록
+헤로쿠 상단 아바타 -> Account settings -> Billing -> Credit card -> 카드등록
 이제 다시 위의 Submit Order Form 선택
 ```
 
