@@ -145,12 +145,12 @@ web: java -Dserver.port=$PORT $JAVA_OPTS -jar {생성한 jar 경로}
 #### 환경 변수 추가 Procfile
 Procfile
 ```
-web: java -Dserver.port=$PORT -Ddb.url=$DB_URL -Ddb.user=$DB_USER -Ddb.password=$DB_PASSWORD $JAVA_OPTS -jar {생성한 jar 경로}
+web: java -Dserver.port=$PORT -Ddb.url=$DB_URL -Ddb.username=$DB_USERNAME -Ddb.password=$DB_PASSWORD $JAVA_OPTS -jar {생성한 jar 경로}
 ```
 
 #### Spring boot 환경 변수 추가
 ```sh
-서버 -> Edit Configurations... -> Environment Variables -> db.url=localhost;db.user=root;db.password=root
+서버 -> Edit Configurations... -> Environment Variables -> db.url=localhost;db.username=root;db.password=root
 ```
 * ❕ 변수와 변수 사이에 공백이 있으면 안 됨
 
@@ -159,6 +159,14 @@ web: java -Dserver.port=$PORT -Ddb.url=$DB_URL -Ddb.user=$DB_USER -Ddb.password=
 Settings -> Config Vars ->
 
 DB_URL: localhost
-DB_USER: root
+DB_USERNAME: root
 DB_PASSWORD: root
+```
+
+#### Fatal error compiling: invalid target release: 11 발생시
+* https://stackoverflow.com/questions/71763260/heroku-fatal-error-compiling-invalid-target-release-11
+
+system.properties
+```properties
+java.runtime.version=11
 ```
