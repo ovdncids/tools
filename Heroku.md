@@ -124,3 +124,40 @@ Resources -> ClearDB MySQL -> NAVISITE 이동후 Name 선택 -> System Informati
 
 Settings -> Reveal Config Vars -> mysql://... (이렇게 MySQL 접속 정보를 볼 수 있다.)
 ```
+
+## Spring Boot
+### EntelliJ에서 jar 파일 만들기
+* 설정
+```sh
+File -> Project Structure... -> Artifacts -> + -> JAR -> From Modules with dependencies -> Main Class 선택
+```
+* jar 파일 생성
+```sh
+Build -> Build Artifacts... -> Build
+```
+
+### Procfile 파일 생성
+Procfile
+```
+web: java -Dserver.port=$PORT $JAVA_OPTS -jar {생성한 jar 경로}
+```
+
+#### 환경 변수 추가 Procfile
+Procfile
+```
+web: java -Dserver.port=$PORT -Ddb.url=$DB_URL -Ddb.user=$DB_USER -Ddb.password=$DB_PASSWORD $JAVA_OPTS -jar {생성한 jar 경로}
+```
+
+#### Spring boot 환경 변수 추가
+```sh
+서버 -> Edit Configurations... -> Environment Variables -> db.url=localhost;db.user=root;db.password=root
+```
+* ❕ 변수와 변수 사이에 공백이 있으면 안 됨
+
+#### Heroku 환경 설정
+```sh
+Settings -> Config Vars ->
+DB_URL: localhost
+DB_USER: root
+DB_PASSWORD: root
+```
