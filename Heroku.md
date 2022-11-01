@@ -34,7 +34,10 @@ heroku git:remote -a {프로젝트 리스트 안에 있는 프로젝트 선택}
 	fetch = +refs/heads/*:refs/remotes/heroku/*
 
 # 로그 보기
-heroku logs -t
+heroku logs --tail
+
+# 서버 재시작
+heroku restart --app {프로젝트 이름}
 ```
 
 ## Backend Server
