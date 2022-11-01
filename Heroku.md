@@ -154,18 +154,7 @@ spring.datasource.username=${db.username}
 spring.datasource.password=${db.password}
 ```
 
-## Spring Boot for Java 11
-* ❕ Java 11버전을 사용하면 지금까지 만나보지 못한 에러를 만날 수 있다.
-
-#### Fatal error compiling: invalid target release: 11 발생시
-* https://stackoverflow.com/questions/71763260/heroku-fatal-error-compiling-invalid-target-release-11
-
-system.properties
-```properties
-java.runtime.version=11
-```
-
-## Spring Boot 수동 설정
+## Spring Boot 수동 설정 (Git에 jar 파일만 올리고 싶을때)
 #### EntelliJ에서 jar 파일 만들기
 * 설정
 ```sh
@@ -180,4 +169,15 @@ Build -> Build Artifacts... -> Build
 Procfile
 ```
 web: java -Dserver.port=$PORT $JAVA_OPTS -jar {생성한 jar 경로 (out/artifacts/...)}
+```
+
+## Spring Boot for Java 11
+* ❕ Java 11버전을 사용하면 지금까지 만나보지 못한 에러를 만날 수 있다.
+
+#### Fatal error compiling: invalid target release: 11 발생시
+* https://stackoverflow.com/questions/71763260/heroku-fatal-error-compiling-invalid-target-release-11
+
+system.properties
+```properties
+java.runtime.version=11
 ```
