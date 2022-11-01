@@ -128,30 +128,11 @@ Resources -> ClearDB MySQL -> NAVISITE 이동후 Name 선택 -> System Informati
 Settings -> Reveal Config Vars -> mysql://... (이렇게 MySQL 접속 정보를 볼 수 있다.)
 ```
 
-## Spring Boot
-### EntelliJ에서 jar 파일 만들기
-* 설정
-```sh
-File -> Project Structure... -> Artifacts -> + -> JAR -> From Modules with dependencies -> Main Class 선택
-```
-* jar 파일 생성
-```sh
-Build -> Build Artifacts... -> Build
-```
+## Spring Boot for Java 1.8
+* 특별한 설정 필요 없음
 
-### Procfile 파일 생성
-Procfile
-```
-web: java -Dserver.port=$PORT $JAVA_OPTS -jar {생성한 jar 경로 (out/artifacts/...)}
-```
-
-#### 환경 변수 추가 Procfile
-Procfile
-```
-web: java -Dserver.port=$PORT -Ddb.url=$DB_URL -Ddb.username=$DB_USERNAME -Ddb.password=$DB_PASSWORD $JAVA_OPTS -jar {생성한 jar 경로 (out/artifacts/...)}
-```
-
-#### Spring boot 환경 변수 추가
+### 환경 변수
+#### Spring boot 환경 변수
 ```sh
 서버 -> Edit Configurations... -> Environment Variables -> db.url=localhost;db.username=root;db.password=root
 ```
@@ -161,10 +142,20 @@ web: java -Dserver.port=$PORT -Ddb.url=$DB_URL -Ddb.username=$DB_USERNAME -Ddb.p
 ```sh
 Settings -> Config Vars ->
 
-DB_URL: localhost
-DB_USERNAME: root
-DB_PASSWORD: root
+db.url: localhost
+db.username: root
+db.password: root
 ```
+
+#### application.properties 설정
+```properties
+spring.datasource.url=jdbc:mysql://${db.url}
+spring.datasource.username=${db.username}
+spring.datasource.password=${db.password}
+```
+
+## Spring Boot for Java 11
+* ❕ Java 11버전을 사용하면 지금까지 만나보지 못한 에러를 만날 수 있다.
 
 #### Fatal error compiling: invalid target release: 11 발생시
 * https://stackoverflow.com/questions/71763260/heroku-fatal-error-compiling-invalid-target-release-11
@@ -172,4 +163,21 @@ DB_PASSWORD: root
 system.properties
 ```properties
 java.runtime.version=11
+```
+
+## Spring Boot 수동 설정
+#### EntelliJ에서 jar 파일 만들기
+* 설정
+```sh
+File -> Project Structure... -> Artifacts -> + -> JAR -> From Modules with dependencies -> Main Class 선택
+```
+* jar 파일 생성
+```sh
+Build -> Build Artifacts... -> Build
+```
+
+#### Procfile 파일 생성 (Heroku에서 읽을 설정 파일)
+Procfile
+```
+web: java -Dserver.port=$PORT $JAVA_OPTS -jar {생성한 jar 경로 (out/artifacts/...)}
 ```
