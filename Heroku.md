@@ -139,13 +139,13 @@ Build -> Build Artifacts... -> Build
 ### Procfile 파일 생성
 Procfile
 ```
-web: java -Dserver.port=$PORT $JAVA_OPTS -jar {생성한 jar 경로}
+web: java -Dserver.port=$PORT $JAVA_OPTS -jar {생성한 jar 경로 (out/artifacts/...)}
 ```
 
 #### 환경 변수 추가 Procfile
 Procfile
 ```
-web: java -Dserver.port=$PORT -Ddb.url=$DB_URL -Ddb.username=$DB_USERNAME -Ddb.password=$DB_PASSWORD $JAVA_OPTS -jar {생성한 jar 경로}
+web: java -Dserver.port=$PORT -Ddb.url=$DB_URL -Ddb.username=$DB_USERNAME -Ddb.password=$DB_PASSWORD $JAVA_OPTS -jar {생성한 jar 경로 (out/artifacts/...)}
 ```
 
 #### Spring boot 환경 변수 추가
