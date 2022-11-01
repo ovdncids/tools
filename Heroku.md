@@ -173,6 +173,7 @@ web: java -Dserver.port=$PORT $JAVA_OPTS -jar {생성한 jar 경로 (out/artifac
 
 ## Spring Boot for Java 11
 * ❕ Java 11버전을 사용하면 지금까지 만나보지 못한 에러를 만날 수 있다.
+* `Spring boot 2.7.5`, `Java 11`, `MyBatis 2.2.2`에서 정상 동작 확인
 
 #### Fatal error compiling: invalid target release: 11 발생시
 * https://stackoverflow.com/questions/71763260/heroku-fatal-error-compiling-invalid-target-release-11
