@@ -293,11 +293,21 @@ git stash clear
 ## reset --hard로 지운 커밋 살리기
 * https://seosh817.tistory.com/297
 ```sh
-# 해당 브렌치의 히스토리 보기
-git reflog 브렌치명
+# 해당 브랜치의 히스토리 보기
+git reflog 브랜치명
 
 # 해당 커밋 살리기
 git reset --hard 커밋아이디
+```
+
+## 삭제된 브랜치 살리기
+* https://shanepark.tistory.com/317
+```sh
+# 삭제된 브랜치의 히스토리 보기
+git reflog 브랜치명
+
+# 삭제된 브랜치 살리기
+git checkout -b 브랜치명 HEAD@{번호}
 ```
 
 ## GitHub Pull requests 기본 메시지
