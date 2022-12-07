@@ -18,10 +18,10 @@ git init
 # 현재 디렉토리의 상태를 확인한다
 git status
 
-# 현재 디렉토리에서 변경된 모든 파일을 git에 적용 한다
+# 현재 디렉토리에서 변경된 모든 파일을 git stage에 적용 한다
 git add .
 
-# 변경된 내역을 commit 한다 (로컬 컴퓨터에만 저장됨)
+# git stage 내역을 commit 한다 (로컬 컴퓨터에만 저장됨)
 git commit -m "first commit"
 
 # GitHub와 현재 디렉토리 연결
