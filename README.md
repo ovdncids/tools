@@ -4,7 +4,7 @@
 
 * [Mac](Mac.md)
 
-* [GIT](git.md)
+* [GIT](Git.md)
 
 * [VSCode](VSCode.md)
 
