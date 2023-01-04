@@ -63,6 +63,8 @@ if (process.env.PORT) {
   process.env.PORT = global.location.port;
 }
 app.listen(process.env.PORT, function() {
+  console.log('Express server listening on ' + global.location.protocol + '//' + global.location.host);
+});
 ```
 
 ## React 환경 설정
