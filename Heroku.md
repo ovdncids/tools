@@ -38,6 +38,9 @@ heroku logs --tail
 
 # 서버 재시작
 heroku restart --app {프로젝트 이름}
+
+# push (동시에 배포 시작)
+git push heroku master
 ```
 
 ## Backend Server
