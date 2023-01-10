@@ -33,6 +33,9 @@ heroku git:remote -a {프로젝트 리스트 안에 있는 프로젝트 선택}
 	url = https://git.heroku.com/{프로젝트}.git
 	fetch = +refs/heads/*:refs/remotes/heroku/*
 
+# 프로젝트 클론
+heroku git:clone -a {프로젝트 리스트 안에 있는 프로젝트 선택}
+
 # 로그 보기
 heroku logs --tail
 
