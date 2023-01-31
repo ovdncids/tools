@@ -51,4 +51,5 @@ https://transmissionbt.com/download
 
 ## Boot Camp
 * 부팅 USB를 꼽고 재부팅 후 `option` 키를 누르면, USB 부팅 메뉴가 추가 된다.
-* [드라이버](https://support.apple.com/kb/DL1721?locale=ko_KR&viewlocale=ko_KR)
+* [드라이버_2013 Early 까지](https://support.apple.com/kb/DL1721?locale=ko_KR&viewlocale=ko_KR)
+* [드라이버_2013 Early 이후](https://support.apple.com/kb/DL1837?locale=ko_KR)
