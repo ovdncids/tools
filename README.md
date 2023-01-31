@@ -14,8 +14,6 @@
 
 * [Docker](Docker.md)
 
-* [Heroku](Heroku.md)
-
 * [Chrome](Chrome.md)
 
 * [iPhone 단축어](iPhoneShortcuts.md)
