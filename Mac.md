@@ -49,6 +49,11 @@ sudo mdutil -a -i off
 ## Mac용 토렌트
 https://transmissionbt.com/download
 
+## macOS 버전별 .dmg 파일 설치
+* https://blog.naver.com/hankboy/221203947247
+* [Bic Sur](https://drive.google.com/file/d/19EyEYqurIQhrvyjlbgSU2IVl4mgd51kd/view?usp=share_link)
+* [Monterey](https://drive.google.com/file/d/1HYDBsW3jvVDPwNy2ru6cD0qswBa7Q8N4/view?usp=share_link)
+
 ## Boot Camp
 * 부팅 USB를 꼽고 재부팅 후 `option` 키를 누르면, USB 부팅 메뉴가 추가 된다.
 * [드라이버_2013 Early 까지](https://support.apple.com/kb/DL1721?locale=ko_KR&viewlocale=ko_KR)
