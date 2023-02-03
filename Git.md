@@ -319,6 +319,20 @@ git reset HEAD@{번호}
 복사본 로컬 > Git (메뉴) > Patch > Apply Patch...
 ```
 
+## 다른 로컬 커밋을 체리픽 (Cherry-pick)
+* https://stackoverflow.com/questions/5120038/is-it-possible-to-cherry-pick-a-commit-from-another-git-repository
+```sh
+git init
+it remote add {프로젝트명} {다른 로컬 경로}
+git fetch {프로젝트명}
+
+# 다른 로컬 경로에 있는 브랜치를 머지 또는 커밋을 체리픽
+
+# 다른 로컬 경로 삭제
+fm -fr .git/FETCH_HEAD
+fm -fr .git/refs/remotes
+```
+
 ## GitHub Pull requests 기본 메시지
 .github/pull_request_template.md
 ```md
