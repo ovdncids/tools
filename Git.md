@@ -329,8 +329,8 @@ git fetch {프로젝트명}
 # 다른 로컬 경로에 있는 브랜치를 머지 또는 커밋을 체리픽
 
 # 다른 로컬 경로 삭제
-fm -fr .git/FETCH_HEAD
-fm -fr .git/refs/remotes
+rm -fr .git/FETCH_HEAD
+rm -fr .git/refs/remotes
 ```
 
 ## GitHub Pull requests 기본 메시지
