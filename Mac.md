@@ -46,6 +46,12 @@ chsh -s /bin/bash
 sudo mdutil -a -i off
 ```
 
+## .DS_Store 파일 삭제
+* https://www.imymac.com/ko/mac-cleaner/how-to-delete-ds-store-file.html
+```sh
+find . -name '.DS_Store' -type f -delete
+```
+
 ## Mac용 토렌트
 https://transmissionbt.com/download
 
