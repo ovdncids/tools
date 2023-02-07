@@ -81,7 +81,7 @@ Windows 10 ISO 파일 선택...
 `FAT32` 파일 시스템의 USB에 설치 
 ```
 
-### 수동 설치
+### Windows 재 설치
 * [Boot Camp 드라이버_2013 Early 까지](https://support.apple.com/kb/DL1721?locale=ko_KR&viewlocale=ko_KR)
 * [Boot Camp 드라이버_2013 Early 이후](https://support.apple.com/kb/DL1837?locale=ko_KR&viewlocale=ko_KR)
 ```sh
