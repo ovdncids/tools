@@ -88,3 +88,6 @@ Windows 10 ISO 파일 선택...
 # Boot Camp 버전이 안 맞을 확률이 높다. `Windows 지원 소프트웨어 다운로드` 다운로드 받고 사용하자.
 부팅 USB를 꼽고 재부팅 후 `option` 키를 누르면, USB 부팅 메뉴가 추가 된다.
 ```
+
+### Mac이 USB-C 타입인 경우
+* Windows 설치시에 Mac의 키보드와 트릭패트를 쓸 수 없으므로 USB to USB-C 젠더 2개 필요.
