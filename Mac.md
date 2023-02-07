@@ -61,6 +61,30 @@ https://transmissionbt.com/download
 * [Monterey](https://drive.google.com/file/d/1HYDBsW3jvVDPwNy2ru6cD0qswBa7Q8N4/view?usp=share_link)
 
 ## Boot Camp
-* 부팅 USB를 꼽고 재부팅 후 `option` 키를 누르면, USB 부팅 메뉴가 추가 된다.
-* [드라이버_2013 Early 까지](https://support.apple.com/kb/DL1721?locale=ko_KR&viewlocale=ko_KR)
-* [드라이버_2013 Early 이후](https://support.apple.com/kb/DL1837?locale=ko_KR)
+### 기본 설치
+* https://support.apple.com/ko-kr/guide/bootcamp-assistant/bcmp173b3bf2/6.1/mac/11.0
+```sh
+하나의 파티션으로 `macOS` 설치 (재부팅 후 command + r)
+응용 프로그램 > 유틸리티 > Boot Camp 지원 > 계속
+Windows 10 ISO 파일 선택...
+`macOS`와 `Wndows` 파티션의 크기 조절 (나중에 파티션 크기를 변경할 수 없음)
+설치 진행
+```
+
+### Windows 지원 소프트웨어 다운로드 (Boot Camp 드라이버)
+* https://support.apple.com/ko-kr/HT204923
+```sh
+응용 프로그램 > 유틸리티 > Boot Camp 지원
+상단 메뉴 > 동작 > Windows 지원 소프트웨어 다운로드
+
+# Mac에서 `FAT32`가 아니면 읽기만 가능
+`FAT32` 파일 시스템의 USB에 설치 
+```
+
+### 수동 설치
+* [Boot Camp 드라이버_2013 Early 까지](https://support.apple.com/kb/DL1721?locale=ko_KR&viewlocale=ko_KR)
+* [Boot Camp 드라이버_2013 Early 이후](https://support.apple.com/kb/DL1837?locale=ko_KR&viewlocale=ko_KR)
+```sh
+# Boot Camp 버전이 안 맞을 확률이 높다. `Windows 지원 소프트웨어 다운로드` 다운로드 받고 사용하자.
+부팅 USB를 꼽고 재부팅 후 `option` 키를 누르면, USB 부팅 메뉴가 추가 된다.
+```
