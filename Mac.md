@@ -90,4 +90,7 @@ Windows 10 ISO 파일 선택...
 ```
 
 ### Mac이 USB-C 타입인 경우
-* Windows 설치시에 Mac의 키보드와 트릭패트를 쓸 수 없으므로 USB to USB-C 젠더 2개 필요.
+```sh
+Windows 설치시에 Mac의 키보드와 트릭패트를 쓸 수 없으므로 USB to USB-C 젠더 2개 필요.
+```
+
