@@ -64,9 +64,9 @@ https://transmissionbt.com/download
 ### 기본 설치
 * https://support.apple.com/ko-kr/guide/bootcamp-assistant/bcmp173b3bf2/6.1/mac/11.0
 ```sh
-하나의 파티션으로 `macOS` 설치 (재부팅 후 command + r)
+재부팅 후 command + r > 하나의 파티션으로 `macOS` 설치
 응용 프로그램 > 유틸리티 > Boot Camp 지원 > 계속
-Windows 10 ISO 파일 선택...
+Windows 10 ISO 파일 선택... (ISO 파일은 AirDrop으로 옮기자, USB보다 빠름)
 `macOS`와 `Wndows` 파티션의 크기 조절 (나중에 파티션 크기를 변경할 수 없음)
 설치 진행
 ```
