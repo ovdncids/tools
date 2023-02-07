@@ -78,7 +78,8 @@ Windows 10 ISO 파일 선택...
 상단 메뉴 > 동작 > Windows 지원 소프트웨어 다운로드
 
 # Mac에서 `FAT32`가 아니면 읽기만 가능
-위치: `FAT32` 파일 시스템의 USB에 설치 
+별도 저장: WindowsSupport (폴더명)
+위치: `FAT32` 파일 시스템의 USB에 설치 (USB 포맷 되지 않음)
 ```
 
 ### Windows 재 설치
