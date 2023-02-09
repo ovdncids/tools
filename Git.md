@@ -7,7 +7,7 @@ git commit --amend -m ""
 
 # GitHub
 * GitHub에서 새로운 프로젝트 생성
-* `memberA` 디렉토리 생성 후 VSCode로 열기
+* `userA` 디렉토리 생성 후 VSCode로 열기
 ```sh
 # README.md 파일 생성
 echo "# test" >> README.md
@@ -31,16 +31,16 @@ git remote add origin https://github.com/...git
 git push -u origin master
 ```
 
-* `memberB` 디렉토리에 GitHub 클론 후 VSCode로 열기
+* `userB` 디렉토리에 GitHub 클론 후 VSCode로 열기
 ```sh
 cd ..
-git clone https://github.com/...git memberB
+git clone https://github.com/...git userB
 ```
 
 ## 동일한 브랜치에서 충돌 테스트
-memberA/README.md
+userA/README.md
 ```md
-memberA: a1
+userA: a1
 ```
 * commit 후 push
 ```sh
@@ -50,9 +50,9 @@ git commit -m "a1"
 git push
 ```
 
-memberB/README.md
+userB/README.md
 ```md
-memberB: b1
+userB: b1
 ```
 * commit 후 push
 ```sh
@@ -70,22 +70,22 @@ git pull
 * ❕ 충돌 발생
 
 ### 충돌 해결하기
-memberB/README.md
+userB/README.md
 ```md
 # test
 <<<<<<< HEAD
-memberB: b1
+userB: b1
 =======
-memberA: a1
+userA: a1
 >>>>>>> 해쉬값
 ```
 * `Accept Current Change`, `Accept Incomming`, `Accept Both Changes`, `Compare Changes` 하나씩 눌러 보기
 
-memberB/README.md
+userB/README.md
 ```md
 # test
-memberA: a1
-memberB: b1
+userA: a1
+userB: b1
 ```
 * commit 후 push
 ```sh
@@ -95,19 +95,19 @@ git commit -m "b1 resolved"
 git push
 ```
 
-* ❔ 실습: `memberA/README.md`에서 `memberA: a2` 입력 후 push 하기 (충돌 해결 하기)
-* ❔ 실습: `memberB`에서 `B.txt` 파일을 만들고 push 하기
+* ❔ 실습: `userA/README.md`에서 `userA: a2` 입력 후 push 하기 (충돌 해결 하기)
+* ❔ 실습: `userB`에서 `B.txt` 파일을 만들고 push 하기
 * ❕ 여러 사람과 프로젝트를 같이 한다면, 항상 `push`전에 `pull` 먼저 해야 한다
 
 ## 브랜치 생성과 머지
 ```sh
-git branch f/memberA
-git checkout f/memberA
+git branch f/userA
+git checkout f/userA
 ```
 
-memberA/README.md
+userA/README.md
 ```md
-f/memberA: a2
+f/userA: a2
 ```
 
 ```sh
@@ -118,9 +118,9 @@ git pull
 git push
 ```
 
-memberB/README.md
+userB/README.md
 ```md
-memberB: b2
+userB: b2
 ```
 
 ```sh
@@ -133,19 +133,19 @@ git push
 
 ### 브랜치 머지
 ```sh
-git merge origin/f/memberA
+git merge origin/f/userA
 ```
 ```md
 <<<<<<< HEAD
-memberB: b1
+userB: b1
 =======
-f/memberA: a2
->>>>>>> origin/f/memberA
+f/userA: a2
+>>>>>>> origin/f/userA
 ```
 
 * ❔ 실습: 충돌 해결 후 push
-* ❔ 실습: `memberA`에서 `origin/master` merge 하기
-* ❔ 실습: `f/memberA: a3` 다시 해보기
+* ❔ 실습: `userA`에서 `origin/master` merge 하기
+* ❔ 실습: `f/userA: a3` 다시 해보기
 
 ## Pull Request
 * 주로 master 브랜치에 작업 브랜치를 머지할때 쓰인다
@@ -158,7 +158,7 @@ New pull request
 
 # base: 작업물을 받을 브렌치, compare: 작업한 브랜치
 base: master <- compare: 작업 브랜치
-  # 선택 후 'There isn’t anything to compare.'가 나오면 f/memberA 브랜치에서 작업 후 push
+  # 선택 후 'There isn’t anything to compare.'가 나오면 f/userA 브랜치에서 작업 후 push
 
 # 작업한 내역이 있을 경우 Open a pull request 페이지로 이동
 Create pull request
@@ -247,18 +247,18 @@ git rebase --continue
 ```
 
 ## 로컬 commit을 최상단으로 올리기
-memberA
+userA
 ```sh
 git checkout master
 # 파일 하나 새로 만들어서 commit
 ```
 
-memberB/README.md
+userB/README.md
 ```sh
 # 파일 수정 후 commit push
 ```
 
-memberA
+userA
 ```sh
 git pull
 git rebase origin/master
