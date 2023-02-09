@@ -63,12 +63,14 @@ https://transmissionbt.com/download
 ## Boot Camp
 ### 기본 설치
 * https://support.apple.com/ko-kr/guide/bootcamp-assistant/bcmp173b3bf2/6.1/mac/11.0
+* [공식 Windows 10 ISO 파일](https://www.microsoft.com/ko-kr/software-download/windows10ISO)
 ```sh
 재부팅 후 command + r > 하나의 파티션으로 `macOS` 설치
 응용 프로그램 > 유틸리티 > Boot Camp 지원 > 계속
-Windows 10 ISO 파일 선택... (ISO 파일은 AirDrop으로 옮기자, USB보다 빠름)
+Windows 10 ISO 파일 선택... (ISO 파일은 AirDrop으로 옮기자 빠름, USB와 다운로드는 비슷한 속도)
 `macOS`와 `Wndows` 파티션의 크기 조절 (나중에 파티션 크기를 변경할 수 없음)
-설치 진행
+윈도우 자동 설치 > 설치 완료 (설치 중에 키보드, 트릭패드 사용 가능)
+D:\bootcamp 폴더에서 setup.exe 실행 (실행 전 복사, setup.exe 완료 후 D:\ 사라짐)
 ```
 
 ### Windows 지원 소프트웨어 다운로드 (Boot Camp 드라이버)
@@ -90,7 +92,7 @@ Windows 10 ISO 파일 선택... (ISO 파일은 AirDrop으로 옮기자, USB보�
 부팅 USB를 꼽고 재부팅 후 `option` 키를 누르면, USB 부팅 메뉴가 추가 된다.
 ```
 
-### Mac이 USB-C 타입인 경우
+#### Mac이 USB-C 타입인 경우
 ```sh
-Windows 설치시에 Mac의 키보드와 트릭패트를 쓸 수 없으므로 `USB to USB-C 젠더` 2개 필요. (CD-ROM, 마우스)
+`option` 키를 누고 Windows 설치시에 Mac의 키보드와 트릭패트를 쓸 수 없으므로 `USB to USB-C 젠더` 2개 필요. (CD-ROM, 마우스)
 ```
