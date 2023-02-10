@@ -46,6 +46,11 @@ chsh -s /bin/bash
 sudo mdutil -a -i off
 ```
 
+## Chrome 업데이트 막기
+```sh
+defaults write com.google.keystone.agent checkinterval 0
+```
+
 ## .DS_Store 파일 삭제
 * https://www.imymac.com/ko/mac-cleaner/how-to-delete-ds-store-file.html
 ```sh
