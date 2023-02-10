@@ -28,6 +28,9 @@
     # 해당 파일의 텝 사이즈를 무시하고 기본 텝 사이즈로 설정한다.
 ```
 
+## Code Spell Checker
+* 오타 체크 프로그램
+
 ## HTML Mifify, Maxify
 * https://codepen.io/depthdev/pen/HKuLs
 * 변경 후 문서 서식으로 줄 마춤
