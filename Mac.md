@@ -17,10 +17,10 @@ open .
 https://gist.github.com/tonysneed/f9f09bfa28bcf98e8d8306f9b21f99e2
 ```
 Automator 실행 > 빠른 동작(서비스)
-동작 > 보관함 > 유틸리티 > 셸 스크립트 실행
+동작 > 보관함 > 유틸리티 > 셸 스크립트 실행을 오른쪽으로 드래그 (동작 또는 파일을 여기로 드래그하여 작업흐름을 구착하십시오.)
 현재 수신하는 작업흐름: 파일 또는 폴더
 선택 항목 위치: Finder
-셸: /bin/bash
+셸: /bin/zsh
 통과 입력: 변수
 open -n -b "com.microsoft.VSCode" --args "$*"
   # 실행 버튼을 눌러서 VSCode가 실행 되는지 확인
