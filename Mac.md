@@ -57,6 +57,12 @@ defaults write com.google.keystone.agent checkinterval 0
 find . -name '.DS_Store' -type f -delete
 ```
 
+## 삼바
+```sh
+Finder > 이동 > 서버에 연결...
+smb://{ip}
+```
+
 ## Mac용 토렌트
 https://transmissionbt.com/download
 
