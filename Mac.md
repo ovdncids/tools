@@ -46,6 +46,11 @@ chsh -s /bin/bash
 sudo mdutil -a -i off
 ```
 
+## 소프트웨어 자동 업데이트 막기
+```sh
+시스템 환경설정 > 소프트웹어 업데이트 > 고급... > 업데이트 확인만 체크
+```
+
 ## Chrome 업데이트 막기
 ```sh
 defaults write com.google.keystone.agent checkinterval 0
