@@ -56,6 +56,11 @@ sudo mdutil -a -i off
 defaults write com.google.keystone.agent checkinterval 0
 ```
 
+## VSCode 업데이트 막기
+```sh
+설정 > update mode > manual
+```
+
 ## .DS_Store 파일 삭제
 * https://www.imymac.com/ko/mac-cleaner/how-to-delete-ds-store-file.html
 ```sh
