@@ -4,10 +4,10 @@
 * https://learn.microsoft.com/ko-kr/windows-hardware/manufacture/desktop/deploy-net-framework-35-by-using-deployment-image-servicing-and-management--dism?view=windows-11
 ```cmd
 DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:d:\sources\sxs
-  # 시디롬 드라이버가 d:\ 드라이브인 경우
+  # 시디롬 드라이버가 d:\ 드라이브인 경우 (추천)
 
 DISM /Online /Enable-Feature /FeatureName:NetFx3 /All
-  # 온라인 설치 (나중에 되는지 확인 필요...)
+  # 온라인 설치
 ```
 
 ## 노트북 펜소음 줄이기
