@@ -77,6 +77,7 @@ smb://{ip}
 https://transmissionbt.com/download
 
 ## Mac 복원에서 macOS 설치에서 하드가 안 보이는 경우
+* [부팅 시 키조합](https://support.apple.com/ko-kr/guide/mac-help/mchl338cf9a8/mac)
 * ❕ 파티션 문제일 수 있다. 파티션 삭제 하고 다시 macOS 설치 실행 해본다.
 
 ## macOS 버전별 .dmg 파일 설치
