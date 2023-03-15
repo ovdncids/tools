@@ -80,6 +80,11 @@ https://transmissionbt.com/download
 * [부팅 시 키조합](https://support.apple.com/ko-kr/guide/mac-help/mchl338cf9a8/mac)
 * ❕ 파티션 문제일 수 있다. 파티션 삭제 하고 다시 macOS 설치 실행 해본다.
 
+## 복구 모드
+* https://kimsungjin.tistory.com/582
+* [SMC 설정 초기화](https://kimsungjin.tistory.com/51): shift + control + option + 전원 (BIOS 초기화라고 생각하면 쉽다. 조합키 순서 중요)
+* [NVRAM 설정 초기화](https://kimsungjin.tistory.com/33): command + option + p + r (설정을 비활성 메모리에 저장 해논 부분을 초기화)
+
 ## macOS 버전별 .dmg 파일 설치
 * https://blog.naver.com/hankboy/221203947247
 * [Bic Sur](https://drive.google.com/file/d/19EyEYqurIQhrvyjlbgSU2IVl4mgd51kd/view?usp=share_link)
