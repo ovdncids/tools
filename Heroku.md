@@ -100,7 +100,7 @@ axios.defaults.baseURL = process.env.REACT_APP_BASE_URL;
 
 ## Django
 ```sh
-# heroku create (프로젝트를 생성하지 말고, 위에서 프로젝트를 선택 하자)
+# heroku create (프로젝트를 생성하지 말고, 위에서 프로젝트를 선택 하자.)
 
 # Django shell 실행
 heroku run python manage.py shell
