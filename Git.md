@@ -246,6 +246,11 @@ git commit -m "충돌 해결 commit명"
 git rebase --continue
 ```
 
+## 강제로 마지막 push 변경 하기 (실무에서는 절대 사용하면 안 됨)
+```sh
+git push -f
+```
+
 ## 로컬 commit을 최상단으로 올리기
 userA
 ```sh
