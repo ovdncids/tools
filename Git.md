@@ -275,8 +275,8 @@ git rebase origin/master
 ```sh
 # 현재 변경 내역 stash 생성
 git stash
-# 현재 변경 내역 stash 생성 이름 주기
-git stash save ""
+# 현재 변경 내역 stash 생성 제목 주기
+git stash save "제목"
 
 # stash 리스트 보기
 git stash list
