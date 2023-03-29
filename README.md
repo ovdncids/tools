@@ -16,4 +16,4 @@
 
 * [Chrome](Chrome.md)
 
-* [iPhone 단축어](iPhoneShortcuts.md)
+* [iPhone Android](iPhoneAndroid.md)
