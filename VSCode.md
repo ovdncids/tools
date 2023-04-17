@@ -23,7 +23,7 @@
 자동 Tab 사이즈 결정
   파일 -> 기본설정 -> 설정 > 검색 > editor.detectIndent
   "editor.tabSize": 2
-    # 기본 텝 사이즈를 2칸으로 변경 한다.
+    # 기본 텝 사이즈를 2칸으로 변경한다.
   "editor.detectIndentation": false
     # 해당 파일의 텝 사이즈를 무시하고 기본 텝 사이즈로 설정한다.
 열린 파일 목록 가로 스크롤 안 되기
