@@ -134,7 +134,7 @@ D:\bootcamp 폴더에서 setup.exe 실행 (실행 전 복사, setup.exe 완료 �
 * https://mac.getutm.app
 
 ## Windows 10
-* [다운로드 - Windows10 Client Arm64 Insider Preview](https://drive.google.com/file/d/1i8z6Q7l7P7NgftLmEUSnoHGfqQzKhmHj/view)
+* [다운로드 - Windows 10 Client Arm64 Insider Preview](https://drive.google.com/file/d/1i8z6Q7l7P7NgftLmEUSnoHGfqQzKhmHj/view)
 ```sh
 + 버튼 > Virtualize
 아키텍처: ARM64 (aarch64)
