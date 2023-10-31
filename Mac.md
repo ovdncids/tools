@@ -129,3 +129,25 @@ D:\bootcamp 폴더에서 setup.exe 실행 (실행 전 복사, setup.exe 완료 �
 ```sh
 `option` 키를 누고 Windows 설치시에 Mac의 키보드와 트릭패트를 쓸 수 없으므로 `USB to USB-C 젠더` 2개 필요. (CD-ROM, 마우스)
 ```
+
+# M1 - UTM (Virtual machines for Mac)
+* https://mac.getutm.app
+
+## Windows 10
+* [다운로드 - Windows10 Client Arm64 Insider Preview](https://drive.google.com/file/d/1i8z6Q7l7P7NgftLmEUSnoHGfqQzKhmHj/view)
+```sh
++ 버튼 > Virtualize
+아키텍처: ARM64 (aarch64)
+시스템: QEMU 5.2 ARM Virtual Machine (virt-5.2)
+```
+
+## Windows 11
+* https://velog.io/@junsugi/M1-Apple-UTM-%EC%9D%B4%EC%9A%A9%ED%95%B4%EC%84%9C-Window-11-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0
+* [다운로드 - Windows 11 Client Arm64 Insider Preview (Beta) - Build 22598](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewARM64)
+```sh
++ 버튼 > Virtualize
+아키텍처: ARM64 (aarch64)
+시스템: QEMU 7.2 ARM Virtual Machine (alias of virt-7.2) (virt)
+Let’s connect you to a network <- 여기서 막힘
+재부팅 > Shift + F10 > taskmgr > Windows Explorer > Open file location > D:\spice-guest-tools...exe 설치
+```
