@@ -148,6 +148,6 @@ D:\bootcamp 폴더에서 setup.exe 실행 (실행 전 복사, setup.exe 완료 �
 + 버튼 > Virtualize
 아키텍처: ARM64 (aarch64)
 시스템: QEMU 7.2 ARM Virtual Machine (alias of virt-7.2) (virt)
-Let’s connect you to a network <- 여기서 막힘
+Let’s connect you to a network <- 여기서 진행 못함
 재부팅 > Shift + F10 > taskmgr > Windows Explorer > Open file location > D:\spice-guest-tools...exe 설치
 ```
