@@ -8,7 +8,7 @@
 # Nginx 시작
 nginx.exe
 
-# Nginx 종료
+# Nginx 종료
 nginx.exe -s stop
 
 # Nginx 재실행 (설정 변경 후 실행)
