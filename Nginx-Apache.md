@@ -9,7 +9,7 @@
 cd "c:\Program Files\nginx-1.24.0"
 nginx.exe
 
-# Nginx 종료 (터미널을 하나더 띄우고 실행)
+# Nginx 종료 (터미널을 하나 더 띄우고 실행)
 nginx.exe -s stop
 ## 이전 터미널의 nginx.exe 종료 됨
 ## nginx: [error] CreateFile() ".../logs/nginx.pid" 이미 Nginx가 종료된 상태
