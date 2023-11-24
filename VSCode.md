@@ -11,6 +11,8 @@
 탐색기 열고 닫기: Ctrl + b
 문서 서식, 코드 자동 정렬(Auto indent): Alt + Shift + f
 ```
+### {} 닫은 상태 유지
+* 파일 -> 기본설정 -> 설정 -> Auto closing Brackets -> Always
 
 ## 설정
 ```sh
