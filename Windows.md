@@ -82,3 +82,14 @@ sc query wuauserv
 ## DirectX (최종)
 * https://www.microsoft.com/ko-kr/download/confirmation.aspx?id=35
 -->
+
+# WSL (Windows Subsystem for Linux)
+* https://www.yalco.kr/_01_install_wsl
+```sh
+# PowerShell 관리자 권한으로 실행
+wsl --install
+## wsl2 버전 기본 설치
+wsl --install -d Ubuntu
+## Ubuntu 설치
+```
+* [0x80370102 오류](https://velog.io/@jaylnne/WSL-Error-0x80370102-%ED%95%B4%EA%B2%B0)
