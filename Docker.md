@@ -47,7 +47,7 @@ docker start httpd1
 docker rm httpd1
 ```
 
-## 호스트(내 컴퓨터)와 연결 하며 컨테이너 생성
+## 호스트(내 컴퓨터)와 연결 하며 컨테이너 생성 (run = create, start, attach 한번에 실행)
 ```sh
 # 호스트와 컨테이너 사이에 포트 포워딩 하는 httpd2 컨테이너 생성
 docker run --name httpd2 -p 8880:80 httpd
@@ -60,4 +60,25 @@ docker run --name httpd3 -p 8880:80 -v {호스트 경로}:/usr/local/apache2/htd
 ```sh
 docker exec -it httpd3 /bin/sh
 docker exec -it httpd3 /bin/bash
+```
+
+## Ubuntu
+* https://sleepyeyes.tistory.com/67
+```sh
+# Ubuntu 이미지 설치
+docker pull ubuntu:latest
+
+# 컨테이너 생성
+docker create -it --name con_ubuntu ubuntu
+
+# 컨테이너 실행
+docker start con_ubuntu
+
+# 컨테이너 Shell 접속 (root로 접속됨)
+docker attach con_ubuntu
+```
+### Shell 접속
+```sh
+apt update
+apt install net-tools
 ```
