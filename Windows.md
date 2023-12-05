@@ -142,6 +142,7 @@ wsl --unregister Ubuntu
 ```sh
 # 네트워크
 ifconfig
+sudo apt update
 sudo apt install net-tools
 
 # MariaDB
