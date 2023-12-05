@@ -69,7 +69,7 @@ docker exec -it httpd3 /bin/bash
 docker pull ubuntu:latest
 
 # 컨테이너 생성
-docker create --name con_ubuntu ubuntu
+docker create --name con_ubuntu -p 38080:8080 -p 33000:3000 ubuntu
 
 # 컨테이너 실행
 docker start con_ubuntu
