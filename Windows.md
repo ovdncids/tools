@@ -53,34 +53,6 @@ powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 ```
 -->
 
-## Services
-```cmd
-rem cmd 관라자 권한으로 실행
-
-rem 서비스 등록
-sc create "서비스 이름" start= demand displayname= "서비스 이름" binpath= "C:\서비스.bat"
-rem = 뒤에 스페이스 한칸 띄어야 한다.
-
-rem 서비스 상태
-sc query "서비스 이름"
-rem StartService FAILED 1053: The service did not respond to the start or control request in a timely fashion.
-rem regeidt > HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control > DWORD32 > ServicesPipeTimeout: 180000
-rem 재시작 후에 동일하면 NSSM를 설치한다.
-
-rem 서비스 시작
-sc start "서비스 이름"
-
-rem 서비스 종료
-sc stop "서비스 이름"
-
-rem 삭제
-sc create "서비스 이름"
-```
-
-### NSSM
-* https://nssm.cc
-* https://stackoverflow.com/questions/415409/run-batch-file-as-a-windows-service
-
 ## .cmd 파일
 ```cmd
 @echo off
@@ -110,6 +82,42 @@ sc query wuauserv
 ## DirectX (최종)
 * https://www.microsoft.com/ko-kr/download/confirmation.aspx?id=35
 -->
+
+## Services
+```cmd
+rem cmd 관라자 권한으로 실행
+
+rem 서비스 등록
+sc create "서비스 이름" start= demand displayname= "서비스 이름" binpath= "C:\서비스.bat"
+rem = 뒤에 스페이스 한칸 띄어야 한다.
+
+rem 서비스 상태
+sc query "서비스 이름"
+rem StartService FAILED 1053: The service did not respond to the start or control request in a timely fashion.
+rem regedit > HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control > DWORD32 > ServicesPipeTimeout: 180000
+rem 재시작 후에 또 "StartService FAILED 1053" 발생하면 NSSM를 설치한다.
+
+rem 서비스 시작
+sc start "서비스 이름"
+
+rem 서비스 종료
+sc stop "서비스 이름"
+
+rem 삭제
+sc create "서비스 이름"
+```
+* [StartService FAILED 1053](https://www.partitionwizard.com/clone-disk/windows-could-not-start-the-service-on-local-computer-error-1053.html)
+
+### NSSM
+* https://nssm.cc
+* https://stackoverflow.com/questions/415409/run-batch-file-as-a-windows-service
+* https://github.com/ovdncids/tools/blob/master/download/nssm-2.24.zip
+```cmd
+nssm-2.24\wind64\nssm.exe install "서비스 이름"
+nssm start "서비스 이름"
+rem nssm 시작하면 윈도우 Service 또한 시작된다.
+rem regedit > HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services > "서비스 이름"이 추가 된다.
+```
 
 # WSL (Windows Subsystem for Linux)
 * https://www.yalco.kr/_01_install_wsl
