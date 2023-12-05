@@ -53,6 +53,34 @@ powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 ```
 -->
 
+## Services
+```cmd
+rem cmd 관라자 권한으로 실행
+
+rem 서비스 등록
+sc create "서비스 이름" start= demand displayname= "서비스 이름" binpath= "C:\서비스.bat"
+rem = 뒤에 스페이스 한칸 띄어야 한다.
+
+rem 서비스 상태
+sc query "서비스 이름"
+rem StartService FAILED 1053: The service did not respond to the start or control request in a timely fashion.
+rem regeidt > HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control > DWORD32 > ServicesPipeTimeout: 180000
+rem 재시작 후에 동일하면 NSSM를 설치한다.
+
+rem 서비스 시작
+sc start "서비스 이름"
+
+rem 서비스 종료
+sc stop "서비스 이름"
+
+rem 삭제
+sc create "서비스 이름"
+```
+
+### NSSM
+* https://nssm.cc
+* https://stackoverflow.com/questions/415409/run-batch-file-as-a-windows-service
+
 ## .cmd 파일
 ```cmd
 @echo off
