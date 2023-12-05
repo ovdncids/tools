@@ -69,7 +69,7 @@ docker exec -it httpd3 /bin/bash
 docker pull ubuntu:latest
 
 # 컨테이너 생성
-docker create -it --name con_ubuntu ubuntu
+docker create --name con_ubuntu ubuntu
 
 # 컨테이너 실행
 docker start con_ubuntu
@@ -77,8 +77,13 @@ docker start con_ubuntu
 # 컨테이너 Shell 접속 (root로 접속됨)
 docker attach con_ubuntu
 ```
+
 ### Shell 접속
 ```sh
 apt update
 apt install net-tools
+apt install iputils-ping
 ```
+
+### 컨테이너 생성시 포트를 설정하지 않은 경우
+* https://stackoverflow.com/questions/19335444/how-do-i-assign-a-port-mapping-to-an-existing-docker-container
