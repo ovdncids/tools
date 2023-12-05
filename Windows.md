@@ -93,3 +93,16 @@ wsl --install -d Ubuntu
 ## Ubuntu 설치
 ```
 * [0x80370102 오류](https://velog.io/@jaylnne/WSL-Error-0x80370102-%ED%95%B4%EA%B2%B0)
+
+## Ubuntu
+* https://github.com/ovdncids/raspberrypi-curriculum#mariadb
+```sh
+# 네트워크
+ifconfig
+sudo apt install net-tools
+
+# MariaDB
+sudo apt install mariadb-server
+sudo service mariadb start
+sudo mysql -u root
+```
