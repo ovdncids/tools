@@ -87,10 +87,17 @@ sc query wuauserv
 * https://www.yalco.kr/_01_install_wsl
 ```sh
 # PowerShell 관리자 권한으로 실행
+
+# wsl2 버전 기본 설치
 wsl --install
-## wsl2 버전 기본 설치
+# Ubuntu 설치
 wsl --install -d Ubuntu
-## Ubuntu 설치
+# 설치된 WSL 목록
+wsl --list
+# 실행중인 모든 WSL 종료
+wsl --shutdown
+# Ubuntu 등록 삭제
+wsl --unregister Ubuntu
 ```
 * [0x80370102 오류](https://velog.io/@jaylnne/WSL-Error-0x80370102-%ED%95%B4%EA%B2%B0)
 
