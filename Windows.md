@@ -93,12 +93,12 @@ rem = 뒤에 스페이스 한칸 띄어야 한다.
 
 rem 서비스 상태
 sc query "서비스 이름"
-rem StartService FAILED 1053: The service did not respond to the start or control request in a timely fashion.
-rem regedit > HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control > DWORD32 > ServicesPipeTimeout: 180000
-rem 재시작 후에 또 "StartService FAILED 1053" 발생하면 NSSM를 설치한다.
 
 rem 서비스 시작
 sc start "서비스 이름"
+rem StartService FAILED 1053: The service did not respond to the start or control request in a timely fashion.
+rem regedit > HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control > DWORD32 > ServicesPipeTimeout: 180000
+rem 재시작 후에 또 "StartService FAILED 1053" 발생하면 NSSM를 설치한다.
 
 rem 서비스 종료
 sc stop "서비스 이름"
