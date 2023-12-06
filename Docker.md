@@ -143,3 +143,25 @@ sudo mysql -u root
 ## 컨테이너 생성시 포트를 설정하지 않은 경우
 * https://stackoverflow.com/questions/19335444/how-do-i-assign-a-port-mapping-to-an-existing-docker-container
 * [컨테이너 파일의 위치](https://yooloo.tistory.com/188)
+```sh
+# 윈도우 Docker 설정 파일 위치
+C:\Users\[사용자]\AppData\Local\Docker\wsl\data\ext4.vhdx
+
+docker info
+## Docker Root Dir: /var/lib/docker
+## 해당 경로를 ubuntu에서 접근해야 한다.
+docker inspect con_ubuntu
+## 설정 정보를 확인
+
+docker run -v/:/data -it --name docker_ubuntu ubuntu /bin/bash
+# -v/:/data = `Docker Root Dir`에 접근 가능하게 해준다.
+
+chroot /data
+# `Docker Root Dir`에 접근
+
+cd /var/lib/docker/containers/[컨테이너 해시값]
+mv hostconfig.json hostconfig.json.ori
+cat << EOF > hostconfig.json
+...{hostconfig.json 파일을 수정해서 넣음}
+EOF
+```
