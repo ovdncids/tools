@@ -138,16 +138,5 @@ wsl --unregister Ubuntu
 * [0x80370102 오류](https://velog.io/@jaylnne/WSL-Error-0x80370102-%ED%95%B4%EA%B2%B0)
 
 ## Ubuntu
-* https://github.com/ovdncids/raspberrypi-curriculum#mariadb
-```sh
-# 네트워크
-ifconfig
-sudo apt update
-sudo apt install net-tools
-
-# MariaDB
-sudo apt install mariadb-server
-sudo service mariadb status
-sudo service mariadb start
-sudo mysql -u root
-```
+* [Docker - Ubuntu](https://github.com/ovdncids/tools/blob/master/Docker.md#shell-%EC%A0%91%EC%86%8D)
+* [Raspberry Pi - MariaDB](https://github.com/ovdncids/raspberrypi-curriculum#mariadb)
