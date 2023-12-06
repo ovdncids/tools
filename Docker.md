@@ -152,9 +152,8 @@ docker info
 ## 해당 경로를 ubuntu에서 접근해야 한다.
 docker inspect con_ubuntu
 ## 설정 정보를 확인
-
-# -v/:/data = `Docker Root Dir`에 접근 가능하게 해준다.
 docker run -v/:/data -it --name docker_ubuntu ubuntu /bin/bash
+## -v/:/data = `Docker Root Dir`에 접근 가능하게 해준다.
 
 # `Docker Root Dir`에 접근
 chroot /data
