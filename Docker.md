@@ -164,9 +164,15 @@ chroot /data
 cd /var/lib/docker/containers/[컨테이너 해시값]
 mv hostconfig.json hostconfig.json.ori
 cat hostconfig.json.ori
+mv config.v2.json config.v2.json.ori
+cat config.v2.json.ori
 
 # hostconfig.json 파일 새로 생성
 cat << EOF > hostconfig.json
 ...{hostconfig.json.ori 파일을 수정해서 넣음}
+EOF
+# config.v2.json 파일 새로 생성
+cat << EOF > config.v2.json
+...{config.v2.json.ori 파일을 수정해서 넣음}
 EOF
 ```
