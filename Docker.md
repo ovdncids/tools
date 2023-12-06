@@ -70,7 +70,7 @@ Docker 종료
 
 # 지금 실행 중이지 않은 컨테이너 삭제
 docker system prune -a
-# 사용하지 않는 볼륨 삭제
+# 지금 사용되지 않는 이미지 삭제
 docker volume prune
 
 # brew uninstall docker
