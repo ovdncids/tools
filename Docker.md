@@ -113,8 +113,8 @@ sudo passwd root
 su - [사용자]
 
 # 네트워크 설치
-apt install net-tools
-apt install iputils-ping
+sudo apt install net-tools
+sudo apt install iputils-ping
 ```
 
 ### 컨테이너 생성시 포트를 설정하지 않은 경우
