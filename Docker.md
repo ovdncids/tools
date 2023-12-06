@@ -109,8 +109,13 @@ apt update
 
 # sudo 설치
 api install sudo
+# 사용자 생성
 sudo adduser [사용자]
+# root 비밀번호 변경
 sudo passwd root
+# 생성한 사용자에게 sudo 권한 주기
+sudo usermod -aG sudo [사용자]
+# 해당 사용자로 로그인
 su - [사용자]
 
 # 네트워크 설치
