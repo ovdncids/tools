@@ -116,7 +116,7 @@ cat /etc/os-release
 apt update
 
 # sudo 설치
-api install sudo
+apt install sudo
 # 사용자 생성
 sudo adduser [사용자]
 # root 비밀번호 변경
