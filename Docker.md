@@ -1,4 +1,4 @@
-# Docker
+# Docker (24.0.7)
 * 가상 컨테이너를 활용하여 원하는 서비스(웹서버, DB등)를 최소화 하여 설치 할 수 있다.
 * https://www.youtube.com/watch?v=Ps8HDIAyPD0&list=PLuHgQVnccGMDeMJsGq2O-55Ymtx0IdKWf
 
@@ -62,6 +62,23 @@ docker exec -it httpd3 /bin/sh
 docker exec -it httpd3 /bin/bash
 ```
 
+## Mac M1 - Docker 초기화
+* https://github.com/docker/for-mac/issues/6145
+```sh
+Docker 종료
+# brew uninstall docker
+
+rm -rf ~/.docker
+rm -rf ~/Library/Caches/com.docker.docker
+rm -rf ~/Library/Group Containers/group.com.docker
+rm -rf ~/Library/Containers/com.docker.docker
+rm -rf ~/Library/Application\ Support/Docker\ Desktop
+
+open --background -a Docker
+# brew install --cask docker
+## --cask는 GUI 기반 프로그램 설치
+```
+
 ## Ubuntu
 * https://sleepyeyes.tistory.com/67
 ```sh
@@ -69,7 +86,10 @@ docker exec -it httpd3 /bin/bash
 docker pull ubuntu:latest
 
 # 컨테이너 생성
-docker create --name con_ubuntu -p 38080:8080 -p 33000:3000 ubuntu
+docker create -it --name con_ubuntu -p 38080:8080 -p 33000:3000 ubuntu
+## -it = 컨테이너 내부로 진입 (attach 가능)
+## -d = 데몬 서비스 (detached 모드)
+## -p = 포트 바인딩
 
 # 컨테이너 실행
 docker start con_ubuntu
@@ -80,7 +100,19 @@ docker attach con_ubuntu
 
 ### Shell 접속
 ```sh
+# 버전 보기
+cat /etc/os-release
+
+# apt update를 하지 않으면 sudo, net-tools 등을 설치 할 수 없다.
 apt update
+
+# sudo 설치
+api install sudo
+sudo adduser [사용자]
+sudo passwd root
+su - [사용자]
+
+# 네트워크 설치
 apt install net-tools
 apt install iputils-ping
 ```
