@@ -116,6 +116,14 @@ su - [사용자]
 # 네트워크 설치
 sudo apt install net-tools
 sudo apt install iputils-ping
+ifconfig
+ping
+
+# MariaDB
+sudo apt install mariadb-server
+sudo service mariadb status
+sudo service mariadb start
+sudo mysql -u root
 ```
 
 ### 컨테이너 생성시 포트를 설정하지 않은 경우
