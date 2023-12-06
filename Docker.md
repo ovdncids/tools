@@ -86,7 +86,7 @@ open --background -a Docker
 docker pull ubuntu:latest
 
 # 컨테이너 생성
-docker create -it --name con_ubuntu -p 38080:8080 -p 33000:3000 ubuntu
+docker create -it --name con_ubuntu -p 38080:8080 -p 33000:3000 -p 33306:3306 ubuntu
 ## -it = 컨테이너 내부로 진입 (attach 가능)
 ## -d = 데몬 서비스 (detached 모드)
 ## -p = 포트 바인딩
