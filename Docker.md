@@ -30,9 +30,9 @@ docker ps
 
 # 아파치 컨테이너를 httpd1 이름으로 생성
 docker run --name httpd1 httpd
-  # 컨테이너 생성과 동시에 현재 터미널에서 컨테이너 실행
+## 컨테이너 생성과 동시에 현재 터미널에서 컨테이너 실행
 docker run --name httpd1 -d httpd
-  # 컨테이너 생성 후 데몬으로 실행
+## 컨테이너 생성 후 데몬으로 실행
 
 # 컨테이너 log 보기
 docker logs -f httpd1
@@ -47,13 +47,14 @@ docker start httpd1
 docker rm httpd1
 ```
 
-## 호스트(내 컴퓨터)와 연결 하며 컨테이너 생성 (run = create, start, attach 한번에 실행)
+## 호스트(내 컴퓨터)와 연결 하며 컨테이너 생성
 ```sh
 # 호스트와 컨테이너 사이에 포트 포워딩 하는 httpd2 컨테이너 생성
 docker run --name httpd2 -p 8880:80 httpd
 
 # 호스트와 컨테이너 사아에 포트 포워딩과 파일 연결 하는 httpd2 컨테이너 생성
 docker run --name httpd3 -p 8880:80 -v {호스트 경로}:/usr/local/apache2/htdocs httpd
+## run = create, start, attach 또는 exec 한번에 실행
 ```
 
 ## 컨테이너에 터미널 연결
@@ -88,7 +89,7 @@ docker pull ubuntu:latest
 # 컨테이너 생성
 docker create -it --name con_ubuntu -p 38080:8080 -p 33000:3000 -p 33306:3306 ubuntu
 ## -it = 컨테이너 내부로 진입 (attach 가능)
-## -d = 데몬 서비스 (detached 모드)
+## -d = 데몬 서비스 (detached 모드, exec으로 터미널 가능)
 ## -p = 포트 바인딩
 
 # 컨테이너 실행
