@@ -153,15 +153,19 @@ docker info
 docker inspect con_ubuntu
 ## 설정 정보를 확인
 
-docker run -v/:/data -it --name docker_ubuntu ubuntu /bin/bash
 # -v/:/data = `Docker Root Dir`에 접근 가능하게 해준다.
+docker run -v/:/data -it --name docker_ubuntu ubuntu /bin/bash
 
-chroot /data
 # `Docker Root Dir`에 접근
+chroot /data
 
+# 컨테이너 inspect 설정 경로 이동
 cd /var/lib/docker/containers/[컨테이너 해시값]
 mv hostconfig.json hostconfig.json.ori
+cat hostconfig.json.ori
+
+# hostconfig.json 파일 새로 생성
 cat << EOF > hostconfig.json
-...{hostconfig.json 파일을 수정해서 넣음}
+...{hostconfig.json.ori 파일을 수정해서 넣음}
 EOF
 ```
