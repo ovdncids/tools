@@ -139,10 +139,12 @@ sudo service mariadb status
 sudo service mariadb start
 sudo mysql -u root
 ```
+* [Raspberry Pi - MariaDB](https://github.com/ovdncids/raspberrypi-curriculum#mariadb)
 
 ## 컨테이너 생성시 포트를 설정하지 않은 경우
 * https://stackoverflow.com/questions/19335444/how-do-i-assign-a-port-mapping-to-an-existing-docker-container
 * [컨테이너 파일의 위치](https://yooloo.tistory.com/188)
+* [chroot 설명](https://www.44bits.io/ko/post/change-root-directory-by-using-chroot)
 ```sh
 # 윈도우 Docker 설정 파일 위치
 C:\Users\[사용자]\AppData\Local\Docker\wsl\data\ext4.vhdx
