@@ -86,7 +86,7 @@ open --background -a Docker
 ## --cask는 GUI 기반 프로그램 설치
 ```
 
-## Ubuntu
+## Ubuntu 22.04.3
 * https://sleepyeyes.tistory.com/67
 * https://lucas-owner.tistory.com/61
 ```sh
