@@ -67,6 +67,12 @@ docker exec -it httpd3 /bin/bash
 * https://github.com/docker/for-mac/issues/6145
 ```sh
 Docker 종료
+
+# 지금 실행 중이지 않은 컨테이너 삭제
+docker system prune -a
+# 사용하지 않는 볼륨 삭제
+docker volume prune
+
 # brew uninstall docker
 
 rm -rf ~/.docker
@@ -134,6 +140,6 @@ sudo service mariadb start
 sudo mysql -u root
 ```
 
-### 컨테이너 생성시 포트를 설정하지 않은 경우
+## 컨테이너 생성시 포트를 설정하지 않은 경우
 * https://stackoverflow.com/questions/19335444/how-do-i-assign-a-port-mapping-to-an-existing-docker-container
 * [컨테이너 파일의 위치](https://yooloo.tistory.com/188)
