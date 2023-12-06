@@ -82,13 +82,15 @@ open --background -a Docker
 
 ## Ubuntu
 * https://sleepyeyes.tistory.com/67
+* https://lucas-owner.tistory.com/61
 ```sh
 # Ubuntu 이미지 설치
 docker pull ubuntu:latest
 
 # 컨테이너 생성
 docker create -it --name con_ubuntu -p 38080:8080 -p 33000:3000 -p 33306:3306 ubuntu
-## -it = 컨테이너 내부로 진입 (attach 가능)
+## -it = 컨테이너 내부로 진입 (attach 가능, i = 상호 입출력, t = tty를 활성화하여 bash 쉘을 사용)
+### -it 옵션을 설정 하지 않으면 `docker start con_ubuntu` 후에 자동 종료 된다.
 ## -d = 데몬 서비스 (detached 모드, exec으로 터미널 가능)
 ## -p = 포트 바인딩
 
@@ -117,6 +119,7 @@ sudo passwd root
 sudo usermod -aG sudo [사용자]
 # 해당 사용자로 로그인
 su - [사용자]
+## 이제 `docker exec -it -u [사용자] con_ubuntu /bin/bash` 접속도 가능하다.
 
 # 네트워크 설치
 sudo apt install net-tools
