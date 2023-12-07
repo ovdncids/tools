@@ -167,12 +167,12 @@ cat hostconfig.json.ori
 mv config.v2.json config.v2.json.ori
 cat config.v2.json.ori
 
-# hostconfig.json 파일 새로 생성
+# hostconfig.json 파일 새로 생성 ("Ports" 부분에 포트 추가)
 cat << EOF > hostconfig.json
 ...{hostconfig.json.ori 파일을 수정해서 넣음}
 EOF
 # config.v2.json 파일 새로 생성
-cat << EOF > config.v2.json
+cat << EOF > config.v2.json ("PortBindings" 부분에 포트 추가)
 ...{config.v2.json.ori 파일을 수정해서 넣음}
 EOF
 ```
