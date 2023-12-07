@@ -131,7 +131,7 @@ su - [사용자]
 sudo apt install net-tools
 sudo apt install iputils-ping
 ifconfig
-ping
+ping [호스트 ip]
 
 # MariaDB
 sudo apt install mariadb-server
