@@ -12,8 +12,6 @@
 
 * [Eclipse](https://github.com/ovdncids/java-curriculum/tree/master/download/eclipse)
 
-* [Docker](Docker.md)
-
 * [Chrome](Chrome.md)
 
 * [iPhone Android](iPhoneAndroid.md)
