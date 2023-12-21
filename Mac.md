@@ -152,3 +152,10 @@ Let’s connect you to a network <- 여기서 진행 못함
 재부팅 > Shift + F10 > taskmgr > Windows Explorer > Open file location > D:\spice-guest-tools...exe 설치
 ```
 * [임시 인증](https://pcwindows.tistory.com/362)
+
+## AltTab
+* https://alt-tab-macos.netlify.app
+* 현재 모니터에서 실행되어 있는 프로그램만 이동 가능한 단축키(option + tab) 프로그램
+```sh
+brew install --cask alt-tab
+```
