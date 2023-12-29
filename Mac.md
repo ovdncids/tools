@@ -175,7 +175,7 @@ chmod 755 {프로젝트 경로}/next.sh
 ```sh
 # 서비스에 등록, 해제
 launchctl load ~/Library/LaunchAgents/com.nextjs.server.plist
-aunchctl unload ~/Library/LaunchAgents/com.nextjs.server.plist
+launchctl unload ~/Library/LaunchAgents/com.nextjs.server.plist
 
 # 서비스가 등록 되었는지 확인 ("Label" = "com.nextjs.server")
 launchctl list | grep nextjs
