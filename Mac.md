@@ -150,12 +150,12 @@ vi com.nextjs.server.plist
     </array>
     <key>RunAtLoad</key>
     <true/>
-    <key>StandardErrorPath</key>
-    <string>{프로젝트 경로}/error.out</string>
-    <key>StandardOutPath</key>
-    <string>{프로젝트 경로}/log.out</string>
     <key>WorkingDirectory</key>
     <string>{프로젝트 경로}/</string>
+    <key>StandardOutPath</key>
+    <string>{프로젝트 경로}/log.out</string>
+    <key>StandardErrorPath</key>
+    <string>{프로젝트 경로}/error.out</string>
   </dict>
 </plist>
 ```
