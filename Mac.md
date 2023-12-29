@@ -131,6 +131,7 @@ D:\bootcamp 폴더에서 setup.exe 실행 (실행 전 복사, setup.exe 완료 �
 ```
 
 # Launch (서비스)
+* https://phillip5094.tistory.com/142
 ```sh
 cd ~/Library/LaunchAgents
 vi com.nextjs.server.plist
@@ -157,8 +158,9 @@ vi com.nextjs.server.plist
     <string>{프로젝트 경로}/</string>
   </dict>
 </plist>
-
 ```
+* 시스템 설정 > 일반 > 로그인 항목(백그라운드)에 추가 된다.
+
 {프로젝트 경로}/next.sh
 ```sh
 vi {프로젝트 경로}/next.sh
@@ -175,16 +177,15 @@ chmod 755 {프로젝트 경로}/next.sh
 launchctl load ~/Library/LaunchAgents/com.nextjs.server.plist
 aunchctl unload ~/Library/LaunchAgents/com.nextjs.server.plist
 
-# 서비스가 등록 되었는지 확인
+# 서비스가 등록 되었는지 확인 ("Label" = "com.nextjs.server")
 launchctl list | grep nextjs
 launchctl list com.nextjs.server
-## "Label" = "com.nextjs.server"
 
 # 서비스 시작, 종료
 launchctl start com.nextjs.server
 launchctl stop com.nextjs.server
 ```
-* ❕ `Launch`에서 사용되는 `{프로젝트 경로}/next.sh` 파일 안에서는 `cd 명령`을 사용해도 경로가 변하지 않는다.
+* ❕ `com.nextjs.server.plist` 파일에서 사용되는 `{프로젝트 경로}/next.sh` 파일 안에서는 `cd 명령`을 사용해도 경로가 변하지 않는다.
 
 # M1 - UTM (Virtual machines for Mac)
 * https://mac.getutm.app
