@@ -130,6 +130,62 @@ D:\bootcamp 폴더에서 setup.exe 실행 (실행 전 복사, setup.exe 완료 �
 `option` 키를 누고 Windows 설치시에 Mac의 키보드와 트릭패트를 쓸 수 없으므로 `USB to USB-C 젠더` 2개 필요. (CD-ROM, 마우스)
 ```
 
+# Launch (서비스)
+```sh
+cd ~/Library/LaunchAgents
+vi com.nextjs.server.plist
+```
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>com.nextjs.server</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>sh</string>
+        <string>next.sh</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>StandardErrorPath</key>
+    <string>{프로젝트 경로}/error.out</string>
+    <key>StandardOutPath</key>
+    <string>{프로젝트 경로}/log.out</string>
+    <key>WorkingDirectory</key>
+    <string>{프로젝트 경로}/</string>
+  </dict>
+</plist>
+
+```
+{프로젝트 경로}/next.sh
+```sh
+vi {프로젝트 경로}/next.sh
+
+source ~/.zshrc
+nvm use 16
+npm run dev
+
+chmod 755 {프로젝트 경로}/next.sh
+```
+
+```sh
+# 서비스에 등록, 해제
+launchctl load ~/Library/LaunchAgents/com.nextjs.server.plist
+aunchctl unload ~/Library/LaunchAgents/com.nextjs.server.plist
+
+# 서비스가 등록 되었는지 확인
+launchctl list | grep nextjs
+launchctl list com.nextjs.server
+## "Label" = "com.nextjs.server"
+
+# 서비스 시작, 종료
+launchctl start com.nextjs.server
+launchctl stop com.nextjs.server
+```
+* ❕ `Launch`에서 사용되는 `{프로젝트 경로}/next.sh` 파일 안에서는 `cd 명령`을 사용해도 경로가 변하지 않는다.
+
 # M1 - UTM (Virtual machines for Mac)
 * https://mac.getutm.app
 
