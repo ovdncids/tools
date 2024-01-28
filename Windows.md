@@ -120,16 +120,21 @@ rem regedit > HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services > "서비스 
 ```
 
 # WSL (Windows Subsystem for Linux)
+* https://learn.microsoft.com/ko-kr/windows/wsl/install
 * https://www.yalco.kr/_01_install_wsl
 ```sh
 # PowerShell 관리자 권한으로 실행
 
 # wsl2 버전 기본 설치
 wsl --install
+# 설치 가능한 Linux 버전 보기
+wsl -l -o
 # Ubuntu 설치
 wsl --install -d Ubuntu
+# Ubuntu 실행
+Ubuntu
 # 설치된 WSL 목록
-wsl --list
+wsl -l -v
 # 실행중인 모든 WSL 종료
 wsl --shutdown
 # Ubuntu 등록 삭제
