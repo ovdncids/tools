@@ -210,15 +210,15 @@ Let’s connect you to a network <- 여기서 진행 못함
 ```
 * [임시 인증](https://pcwindows.tistory.com/362)
 
+## 상단 메뉴 막대에 아이콘 삭제
+* [command + 밖으로 드래그](https://www.gamingdeputy.com/kr/apple-world/mac-%EB%A9%94%EB%89%B4-%EB%A7%89%EB%8C%80%EC%97%90%EC%84%9C-%EC%95%84%EC%9D%B4%EC%BD%98%EC%9D%84-%EC%A0%9C%EA%B1%B0%ED%95%98%EA%B1%B0%EB%82%98-%EC%9E%AC%EC%A0%95%EB%A0%AC%ED%95%98%EB%8A%94-5%EA%B0%80)
+
 ## AltTab
 * https://alt-tab-macos.netlify.app
 * 현재 모니터에서 실행되어 있는 프로그램만 이동 가능한 단축키(option + tab) 프로그램
 ```sh
 brew install --cask alt-tab
 ```
-
-## 상단 메뉴 막대에 아이콘 삭제
-* [https://www.gamingdeputy.com/kr/apple-world/mac-%EB%A9%94%EB%89%B4-%EB%A7%89%EB%8C%80%EC%97%90%EC%84%9C-%EC%95%84%EC%9D%B4%EC%BD%98%EC%9D%84-%EC%A0%9C%EA%B1%B0%ED%95%98%EA%B1%B0%EB%82%98-%EC%9E%AC%EC%A0%95%EB%A0%AC%ED%95%98%EB%8A%94-5%EA%B0%80/](command + 밖으로 드래그)
 
 ## Keyboard Maestro (마우스 1px 이동 가능 매크로)
 * https://www.keyboardmaestro.com/main
@@ -227,3 +227,4 @@ brew install --cask alt-tab
 Macros > + New Macro > Triggered by any of the following > + New Trigger > Hot Key Trigger > 단축키 > is down
 Will execute the following actions > + New Action > Interface Control > Move or Click Mouse > at: 1, relative to the current mouse location
 ```
+
