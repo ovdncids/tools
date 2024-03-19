@@ -222,5 +222,5 @@ brew install --cask alt-tab
 * https://brunch.co.kr/@second-space/10
 ```sh
 Macros > + New Macro > Triggered by any of the following > + New Trigger > Hot Key Trigger > 단축키 > is down
-Will execute the following actions > New Action > Interface Control > Move or Click Mouse > at: 1, relative to the current mouse location
+Will execute the following actions > + New Action > Interface Control > Move or Click Mouse > at: 1, relative to the current mouse location
 ```
