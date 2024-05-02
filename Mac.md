@@ -228,3 +228,5 @@ Macros > + New Macro > Triggered by any of the following > + New Trigger > Hot K
 Will execute the following actions > + New Action > Interface Control > Move or Click Mouse > at: 1, relative to the current mouse location
 ```
 
+## 안드로이드폰 화면 보기 (scrcpy)
+* https://sean.tistory.com/60
