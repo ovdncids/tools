@@ -194,6 +194,7 @@ launchctl stop com.nextjs.server
 * [다운로드 - Windows 10 Client Arm64 Insider Preview](https://drive.google.com/file/d/1i8z6Q7l7P7NgftLmEUSnoHGfqQzKhmHj/view)
 ```sh
 + 버튼 > Virtualize
+Import VHDX Image: 체크
 아키텍처: ARM64 (aarch64)
 시스템: QEMU 7.2 ARM Virtual Machine (virt-7.2)
 ```
@@ -203,6 +204,7 @@ launchctl stop com.nextjs.server
 * [다운로드 - Windows 11 Client Arm64 Insider Preview (Beta) - Build 22598](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewARM64)
 ```sh
 + 버튼 > Virtualize
+Import VHDX Image: 체크
 아키텍처: ARM64 (aarch64)
 시스템: QEMU 7.2 ARM Virtual Machine (alias of virt-7.2) (virt)
 Let’s connect you to a network <- 여기서 진행 못함
