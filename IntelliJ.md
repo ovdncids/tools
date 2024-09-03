@@ -34,3 +34,4 @@ Setting > Version Control > Commit > Analyze code > 해제
 Setting > Plugins > iBATIS/MyBatis mini-plugin
 재시작
 ```
+* [ServiceImpl 쉽게 이동](https://github.com/ovdncids/java-curriculum/blob/master/SpringBootRestAPI.md#service%EC%99%80-serviceimpl-%EC%89%BD%EA%B2%8C-%EC%9D%B4%EB%8F%99)
