@@ -31,7 +31,7 @@ Setting > Version Control > Commit > Analyze code > 해제
 
 ## MyBatis에서 xml 파일 쉽게 열기
 ```sh
-Setting > Plugins > iBATIS/MyBatis mini-plugin
+Setting > Plugins > MyBatisX
 재시작
 ```
 * [ServiceImpl 쉽게 이동](https://github.com/ovdncids/java-curriculum/blob/master/SpringBootRestAPI.md#service%EC%99%80-serviceimpl-%EC%89%BD%EA%B2%8C-%EC%9D%B4%EB%8F%99)
