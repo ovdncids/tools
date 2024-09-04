@@ -119,6 +119,10 @@ rem nssm 시작하면 윈도우 Service 또한 시작된다.
 rem regedit > HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services > "서비스 이름"이 추가 된다.
 ```
 
+## 윈도우에서 Mac북을 보조 모니터로 사용하기
+* [Server Windows](https://www.spacedesk.net)
+* [Client](http://viewer.spacedesk.net)
+
 # WSL (Windows Subsystem for Linux)
 * https://learn.microsoft.com/ko-kr/windows/wsl/install
 * https://www.yalco.kr/_01_install_wsl
