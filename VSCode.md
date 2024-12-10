@@ -30,6 +30,8 @@
     # 해당 파일의 텝 사이즈를 무시하고 기본 텝 사이즈로 설정한다.
 열린 파일 목록 가로 스크롤 안 되기
   파일 -> 기본설정 -> 설정 -> Wrap Tabs 체크
+import { } 사이에 공백 유무
+  파일 -> 기본설정 -> 설정 -> Insert Space After Opening And Before Closing Nonempty Braces
 ```
 
 ## Code Spell Checker
