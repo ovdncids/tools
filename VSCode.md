@@ -46,7 +46,7 @@
 ```json
 "vetur.format.defaultFormatterOptions": {
     "prettier": {
-    "semi": false
+        "semi": false
     }
 }
 ```
