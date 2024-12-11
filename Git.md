@@ -322,6 +322,7 @@ git reset HEAD@{번호}
 ```sh
 # 로컬에서 origin/브랜치 삭제 확인
 git branch -r
+
 # origin/브랜치 삭제
 git branch -dr origin/브랜치
 ```
