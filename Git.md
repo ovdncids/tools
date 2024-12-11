@@ -318,6 +318,14 @@ git checkout -b 브랜치명 HEAD@{번호}
 git reset HEAD@{번호}
 ```
 
+## 삭제된 원격 저장소의 브랜치 삭제
+```sh
+# 로컬에서 원격 브랜치 삭제 확인
+git branch -r
+# 원격 브랜치 삭제
+git branch -dr origin/브랜치
+```
+
 ## Create Patch IntelliJ (서로 다른 로컬 git으로 커밋 복사)
 ```sh
 원복 로컬 > Git (창) > Log > 복사하고 싶은 커밋 > Create Patch (파일 저장 또는 클립보드)
