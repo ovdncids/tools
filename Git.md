@@ -318,11 +318,11 @@ git checkout -b 브랜치명 HEAD@{번호}
 git reset HEAD@{번호}
 ```
 
-## 삭제된 원격 저장소의 브랜치 삭제
+## 삭제된 Repository의 origin/브랜치 삭제
 ```sh
-# 로컬에서 원격 브랜치 삭제 확인
+# 로컬에서 origin/브랜치 삭제 확인
 git branch -r
-# 원격 브랜치 삭제
+# origin/브랜치 삭제
 git branch -dr origin/브랜치
 ```
 
