@@ -18,6 +18,13 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All
                     -> 최대 프로세서 상태 -> 99%
 ```
 
+## 설정
+### Window + 좌우 방향키 안 될때
+```cmd
+제어판 -> 접근성 센터 -> 보다 쉽게 작업에 집중할 수 있도록 설정 -> 창을 쉽게 관리 ->
+  화면 가장자리로 이동할 때 창이 자동으로 배열되지 않도록 방지 -> 해제
+```
+
 ### 프로세서 성능 강화 모드
 ```registry
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\be337238-0d82-4146-a960-4f3749d470c7
