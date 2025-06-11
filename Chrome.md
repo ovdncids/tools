@@ -11,3 +11,6 @@
 ## Allow CORS: Access-Control-Allow-Origin
 * https://chromewebstore.google.com/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=ko
 * CORS 오류 무시해주는 확장 프로그램
+
+## Chrome 원격 데스크톱
+* `Chrome 원격 데스크톱 앱` 좌측에 `원격 액세스` 아니고 `원격 지원` 탭임
