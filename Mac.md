@@ -196,7 +196,7 @@ launchctl stop com.nextjs.server
 + 버튼 > Virtualize
 Import VHDX Image: 체크
 아키텍처: ARM64 (aarch64)
-시스템: QEMU 7.2 ARM Virtual Machine (virt-7.2) 또는 QEMU 9.2 ARM Virtual Machine (virt-9.2)
+시스템: QEMU 7.2 ARM Virtual Machine (virt-7.2) 또는 QEMU 9.1 ARM Virtual Machine (virt-9.1)
 ```
 * ❕ 다운받은 `VHDX Image` 파일을 실행하는 것으로 `iso CD-ROM` 파일로 설치하는 것이 아님
 * [CrystalFetch ISO Downloader - ISO 파일 다운 로드](https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12)
