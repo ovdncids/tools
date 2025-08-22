@@ -199,6 +199,9 @@ Import VHDX Image: 체크
 시스템: QEMU 7.2 ARM Virtual Machine (virt-7.2) 또는 QEMU 9.1 ARM Virtual Machine (virt-9.1)
 ```
 * ❕ 다운받은 `VHDX Image` 파일을 실행하는 것으로 `iso CD-ROM` 파일로 설치하는 것이 아님
+* 윈도우에서 저장한 `한글 파일명 파일` > `맥 공유 폴더`로 이동 > 맥에서 메일로 해당 파일을 선택하면 `한글 파일명`이 깨지지 않고 메일 전송 가능
+
+### ISO로 설치
 * [CrystalFetch ISO Downloader - ISO 파일 다운 로드](https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12)
 
 ## Windows 11
