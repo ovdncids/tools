@@ -223,6 +223,7 @@ git rebase -i HEAD~2
 ```vi
 # 둘째줄 pick을 fixup으로 수정 후 저장 종료
 ```
+* ❕ `fixup`은 맨 밑줄이고, `edit`는 맨 위줄이다. 
 
 ### 이전 commit 내용 수정하기
 * 로컬 commit 3개 하기
