@@ -235,5 +235,10 @@ Macros > + New Macro > Triggered by any of the following > + New Trigger > Hot K
 Will execute the following actions > + New Action > Interface Control > Move or Click Mouse > at: 1, relative to the current mouse location
 ```
 
+## 일반 키보드 Window키와 Alt키 바꾸기 (Sequoia)
+```sh
+시스템 설정 > 키보드 > 키보드 단축키 > 보조 키 > 해당 키보드 선택 후 Command, Option키 변경
+```
+
 ## 안드로이드폰 화면 보기 (scrcpy)
 * https://sean.tistory.com/60
