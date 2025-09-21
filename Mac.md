@@ -205,7 +205,7 @@ Import VHDX Image: 체크
 * [CrystalFetch ISO Downloader - ISO 파일 다운 로드](https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12)
 
 ### Wheel 상하 바꾸는 프로그램
-* [X-Mouse Button Control](https://www.highrez.co.uk/downloads/XMouseButtonControl.htm)
+* [X-Mouse Button Control > Scrolling > Invert mouse wheel scrolling](https://www.highrez.co.uk/downloads/XMouseButtonControl.htm)
 
 ## Windows 11
 * https://velog.io/@junsugi/M1-Apple-UTM-%EC%9D%B4%EC%9A%A9%ED%95%B4%EC%84%9C-Window-11-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0
