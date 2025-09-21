@@ -242,6 +242,11 @@ Will execute the following actions > + New Action > Interface Control > Move or 
 ```sh
 시스템 설정 > 키보드 > 키보드 단축키 > 보조 키 > 해당 키보드 선택 후 Command, Option키 변경
 ```
+### `~ 키를 눌렀는데 §± 문자가 입력될때
+* 키보드 유형이 `ANSI`가 아니고 `ISO`이면 발생한다.
+```sh
+시스템 설정 > 키보드 > 키보드 유형 변경... > (해당 키보드 이름이 맞는지 확인, 마우스가 변경될 수도 있다) > ANSI 변경
+```
 
 ## 안드로이드폰 화면 보기 (scrcpy)
 * https://sean.tistory.com/60
