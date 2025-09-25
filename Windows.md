@@ -24,6 +24,11 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All
 게이밍 노트북 > 내장 그래픽 카드만 사용하고, 게이밍 그래픽 카드는 `디바이스 사용 안 함`
 ```
 
+## 배터리 리포트 (사이클 수와 사용 내역을 볼 수 있다.)
+```sh
+관리자 권한 > cmd > powercfg /batteryreport
+```
+
 ## 설정
 ### Window + 좌우 방향키 안 될때
 ```cmd
