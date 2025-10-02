@@ -132,6 +132,8 @@ sc create "서비스 이름"
 * https://github.com/ovdncids/tools/blob/master/download/nssm-2.24.zip
 ```cmd
 nssm-2.24\wind64\nssm.exe install "서비스 이름"
+rem nssm GUI가 실행되고, 실행 파일 및 아큐먼트를 설정 할 수 있다.
+
 nssm start "서비스 이름"
 rem nssm 시작하면 윈도우 Service 또한 시작된다.
 rem regedit > HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services > "서비스 이름"이 추가 된다.
