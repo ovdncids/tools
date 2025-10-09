@@ -187,6 +187,15 @@ launchctl stop com.nextjs.server
 ```
 * ❕ `com.nextjs.server.plist` 파일에서 사용되는 `{프로젝트 경로}/next.sh` 파일 안에서는 `cd 명령`을 사용해도 경로가 변하지 않는다.
 
+# M1 - macOS 재설치
+```sh
+재시작 > 전원 버튼 누르고 있기 > macOS 복구 모드
+  > 디스크 유틸리티
+    > Macintosh_HD - Data > - 아이콘 클릭
+    > Macintosh_HD > 지우기
+  > macOS 설치
+```
+
 # M1 - UTM (Virtual machines for Mac)
 * https://mac.getutm.app
 
