@@ -1,6 +1,6 @@
 # Mac
 ## M1 - macOS 재설치
-* `메모` 백업
+* `메모`, `바탕화면` 백업
 * <details><summary>자주쓰는 <code>.md</code> 이모지</summary>
 
   ❕ ❔
