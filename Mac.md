@@ -1,4 +1,18 @@
 # Mac
+## M1 - macOS 재설치
+* `메모` 백업
+* <details><summary>자주쓰는 <code>.md</code> 이모지</summary>
+
+  ❕ ❔
+</details>
+
+```sh
+재시작 > 전원 버튼 누르고 있기 > macOS 복구 모드
+  > 디스크 유틸리티
+    > Macintosh_HD - Data > - 아이콘 클릭
+    > Macintosh_HD > 지우기
+  > macOS 설치
+```
 
 ## 설정
 * `배터리 퍼센트 보기`: 시스템 설정 > 제어 센터 > 배터리 > 퍼센트 보기
@@ -186,15 +200,6 @@ launchctl start com.nextjs.server
 launchctl stop com.nextjs.server
 ```
 * ❕ `com.nextjs.server.plist` 파일에서 사용되는 `{프로젝트 경로}/next.sh` 파일 안에서는 `cd 명령`을 사용해도 경로가 변하지 않는다.
-
-# M1 - macOS 재설치
-```sh
-재시작 > 전원 버튼 누르고 있기 > macOS 복구 모드
-  > 디스크 유틸리티
-    > Macintosh_HD - Data > - 아이콘 클릭
-    > Macintosh_HD > 지우기
-  > macOS 설치
-```
 
 # M1 - UTM (Virtual machines for Mac)
 * https://mac.getutm.app
