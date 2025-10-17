@@ -36,3 +36,8 @@ Setting > Plugins > MyBatisX
 ```
 * [Intellij에서 Service와 ServiceImpl 쉽게 이동
 ](https://github.com/ovdncids/java-curriculum/blob/master/SpringBootRestAPI.md#intellij%EC%97%90%EC%84%9C-service%EC%99%80-serviceimpl-%EC%89%BD%EA%B2%8C-%EC%9D%B4%EB%8F%99)
+
+## Java file is located outside of the module source root, so it won't be complied
+```sh
+src > main > java > 오른쪽 클릭 > Mark Directory as > Sources Root
+```
