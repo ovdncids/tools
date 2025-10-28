@@ -71,6 +71,11 @@ powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 ```
 -->
 
+## tracert
+```cmd
+tracert naver.com
+```
+
 ## .cmd 파일
 ```cmd
 @echo off
