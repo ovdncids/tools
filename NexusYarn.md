@@ -67,3 +67,10 @@ package.json
 ```sh
 yarn install --frozen-lock
 ```
+
+## `yanr install` Request failed "401 Unauthorized"
+* https://github.com/yarnpkg/yarn/issues/3093
+* C:\Users\[사용자]\.npmrc (파일 첫 줄에 추가)
+```npmrc
+always-auth=true
+```
