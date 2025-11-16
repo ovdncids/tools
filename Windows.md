@@ -1,5 +1,12 @@
 # Windows
 
+## 백업
+```cmd
+1. 바탕화면
+2. 라이브러리(Node.js, Maven)
+3. 크롬 즐겨 찾기
+```
+
 ## Microsoft .NET Framework 3.5
 * https://learn.microsoft.com/ko-kr/windows-hardware/manufacture/desktop/deploy-net-framework-35-by-using-deployment-image-servicing-and-management--dism?view=windows-11
 ```cmd
