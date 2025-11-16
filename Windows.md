@@ -1,6 +1,6 @@
 # Windows
 
-## 백업
+## 재설치 백업
 ```cmd
 1. 바탕화면
 2. 라이브러리(Node.js, Maven)
