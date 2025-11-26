@@ -201,17 +201,17 @@ launchctl stop com.nextjs.server
 ```
 * ❕ `com.nextjs.server.plist` 파일에서 사용되는 `{프로젝트 경로}/next.sh` 파일 안에서는 `cd 명령`을 사용해도 경로가 변하지 않는다.
 
-# M1 - UTM (Virtual machines for Mac 3.6.5)
+# M1 - UTM (Virtual machines for Mac)
 * https://mac.getutm.app
-* [3.6.5](https://github.com/utmapp/UTM/releases)
+* [4.6.5](https://github.com/utmapp/UTM/releases)
 
-## Windows 10
+## Windows 10 - UTM (4.6.5)
 * [다운로드 - Windows 10 Client Arm64 Insider Preview](https://drive.google.com/file/d/1i8z6Q7l7P7NgftLmEUSnoHGfqQzKhmHj/view)
 ```sh
 + 버튼 > Virtualize
-Import VHDX Image: 체크 (3.7.x 이상은 체크 못 함)
+Import VHDX Image: 체크 (4.7.x 이상은 체크 못 함)
 아키텍처: ARM64 (aarch64)
-시스템: QEMU 7.2 ARM Virtual Machine (virt-7.2) 또는 QEMU 9.1 ARM Virtual Machine (virt-9.1)
+시스템: QEMU 9.1 ARM Virtual Machine (virt-9.1)
 ```
 * ❕ 다운받은 `VHDX Image` 파일을 실행하는 것으로 `iso CD-ROM` 파일로 설치하는 것이 아님
 
@@ -223,7 +223,7 @@ Import VHDX Image: 체크 (3.7.x 이상은 체크 못 함)
 ### Wheel 상하 바꾸는 프로그램
 * [X-Mouse Button Control > Scrolling > Invert mouse wheel scrolling](https://www.highrez.co.uk/downloads/XMouseButtonControl.htm)
 
-## Windows 11
+## Windows 11 - UTM (4.7.4)
 * [다운로드 - Download Windows 11 for Arm-based](https://www.microsoft.com/en-us/software-download/windows11arm64)
 
 ```sh
@@ -231,7 +231,7 @@ Import VHDX Image: 체크 (3.7.x 이상은 체크 못 함)
 Import VHDX Image: 체크 해제
 부팅 ISO 이미지: 찾아보기...
 아키텍처: ARM64 (aarch64)
-시스템: QEMU 9.1 ARM Virtual Machine (alias of virt-9.1) (virt)
+시스템: QEMU 10.0 ARM Virtual Machine (alias of virt-10.0) (virt)
 ```
 * [임시 인증](https://pcwindows.tistory.com/362)
 
