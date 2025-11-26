@@ -224,15 +224,14 @@ Import VHDX Image: 체크 (3.7.x 이상은 체크 못 함)
 * [X-Mouse Button Control > Scrolling > Invert mouse wheel scrolling](https://www.highrez.co.uk/downloads/XMouseButtonControl.htm)
 
 ## Windows 11
-* https://velog.io/@junsugi/M1-Apple-UTM-%EC%9D%B4%EC%9A%A9%ED%95%B4%EC%84%9C-Window-11-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0
-* [다운로드 - Windows 11 Client Arm64 Insider Preview (Beta) - Build 22598](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewARM64)
+* [다운로드 - Download Windows 11 for Arm-based](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewARM64)
+
 ```sh
 + 버튼 > Virtualize
-Import VHDX Image: 체크
+Import VHDX Image: 체크 해제
+부팅 ISO 이미지: 찾아보기...
 아키텍처: ARM64 (aarch64)
-시스템: QEMU 7.2 ARM Virtual Machine (alias of virt-7.2) (virt)
-Let’s connect you to a network <- 여기서 진행 못함
-재부팅 > Shift + F10 > taskmgr > Windows Explorer > Open file location > D:\spice-guest-tools...exe 설치
+시스템: QEMU 9.1 ARM Virtual Machine (alias of virt-9.1) (virt)
 ```
 * [임시 인증](https://pcwindows.tistory.com/362)
 
