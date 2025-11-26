@@ -224,7 +224,7 @@ Import VHDX Image: 체크 (3.7.x 이상은 체크 못 함)
 * [X-Mouse Button Control > Scrolling > Invert mouse wheel scrolling](https://www.highrez.co.uk/downloads/XMouseButtonControl.htm)
 
 ## Windows 11
-* [다운로드 - Download Windows 11 for Arm-based](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewARM64)
+* [다운로드 - Download Windows 11 for Arm-based](https://www.microsoft.com/en-us/software-download/windows11arm64)
 
 ```sh
 + 버튼 > Virtualize
