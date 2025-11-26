@@ -201,18 +201,20 @@ launchctl stop com.nextjs.server
 ```
 * ❕ `com.nextjs.server.plist` 파일에서 사용되는 `{프로젝트 경로}/next.sh` 파일 안에서는 `cd 명령`을 사용해도 경로가 변하지 않는다.
 
-# M1 - UTM (Virtual machines for Mac)
+# M1 - UTM (Virtual machines for Mac 3.6.5)
 * https://mac.getutm.app
+* [3.6.5](https://github.com/utmapp/UTM/releases)
 
 ## Windows 10
 * [다운로드 - Windows 10 Client Arm64 Insider Preview](https://drive.google.com/file/d/1i8z6Q7l7P7NgftLmEUSnoHGfqQzKhmHj/view)
 ```sh
 + 버튼 > Virtualize
-Import VHDX Image: 체크
+Import VHDX Image: 체크 (3.7.x 이상은 체크 못 함)
 아키텍처: ARM64 (aarch64)
 시스템: QEMU 7.2 ARM Virtual Machine (virt-7.2) 또는 QEMU 9.1 ARM Virtual Machine (virt-9.1)
 ```
 * ❕ 다운받은 `VHDX Image` 파일을 실행하는 것으로 `iso CD-ROM` 파일로 설치하는 것이 아님
+
 * 윈도우에서 저장한 `한글 파일명 파일` > `맥 공유 폴더`로 이동 > 맥에서 메일로 해당 파일을 선택하면 `한글 파일명`이 깨지지 않고 메일 전송 가능
 
 ### ISO로 설치
