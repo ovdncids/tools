@@ -52,6 +52,10 @@ registry "http://localhost:8081/repository/npm-group/"
 
 * 이제 Proxy와 Hosted 둘다 사용가능하다.
 
+## `gradle build` 중 `gradle-8.14.3-bin.zip` 파일이 없다고 나올때
+* https://services.gradle.org/distributions
+* `gradle-8.14.3-bin.zip` 다운받고 해당 경로로 이동한다.
+
 # YARN
 ## 해당 라이브러리 버전으로 lock 해서 yarn install 하기
 package.json
