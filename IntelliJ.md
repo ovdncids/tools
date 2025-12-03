@@ -42,7 +42,12 @@ Setting > Plugins > MyBatisX
 src > main > java > 오른쪽 클릭 > Mark Directory as > Sources Root
 ```
 
-## 라이브러리를 못 찾고 빨간색으로 표시 되는 경우
+## Tomcat 프로젝트
+* File > Settings > Build, Execution, Deployment > Application Servers > + Tomcat Server > Tomcat 경로 선택
+* {Tomcat 경로}/webapps/ROOT 폴더명 변경
+* Run > Edit Configurations... > + > Tomcat Server > Deployment > + > External Source... > 해당 프로젝트 선택 (해당 경로를 ROOT로 폴더명 변경해도 좋음)
+
+### 라이브러리를 못 찾고 빨간색으로 표시 되는 경우
 ```sh
-Project Structure > Project Settings > Modules > 해당 프로젝트 > Dependencies > + > 2. Library... > Project Libraries > lib
+Project Structure > Project Settings > Modules > 해당 프로젝트 > Dependencies > + > 2. Library... > Project Libraries > lib와 Tomcat
 ```
