@@ -44,5 +44,5 @@ src > main > java > 오른쪽 클릭 > Mark Directory as > Sources Root
 
 ## 라이브러리를 못 찾고 빨간색으로 표시 되는 경우
 ```sh
-Project Structure > Project Settings > Modules > 해당 프로젝트 > Dependencies > + > lib
+Project Structure > Project Settings > Modules > 해당 프로젝트 > Dependencies > + > 2. Library... > Project Libraries > lib
 ```
