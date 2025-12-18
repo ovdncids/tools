@@ -51,3 +51,8 @@ src > main > java > 오른쪽 클릭 > Mark Directory as > Sources Root
 ```sh
 Project Structure > Project Settings > Modules > 해당 프로젝트 > Dependencies > + > 2. Library... > Project Libraries > lib와 Tomcat
 ```
+
+## Git > Show History > Show Diff > 아주 이전 커밋과 비교할때
+```sh
+Compare with Local 또는 Show All Affected Files
+```
