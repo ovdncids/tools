@@ -56,3 +56,6 @@ Project Structure > Project Settings > Modules > 해당 프로젝트 > Dependenc
 ```sh
 Compare with Local 또는 Show All Affected Files
 ```
+
+## Community Edition 2025.2.6.1 마지막 버전
+* https://youtrack.jetbrains.com/projects/OC/articles/IDEA-A-2100662434/IntelliJ-IDEA-2025.2-Latest-Builds
