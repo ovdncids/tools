@@ -181,3 +181,8 @@ wsl --unregister Ubuntu
 ## Ubuntu
 * [Docker - Ubuntu](https://github.com/ovdncids/tools/blob/master/Docker.md#shell-%EC%A0%91%EC%86%8D)
 * [Raspberry Pi - MariaDB](https://github.com/ovdncids/raspberrypi-curriculum#mariadb)
+
+## Windows 11 앱 최신버전으로 올리기
+```cmd
+winget upgrade --all
+```
