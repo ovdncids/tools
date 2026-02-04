@@ -265,3 +265,30 @@ Will execute the following actions > + New Action > Interface Control > Move or 
 
 ## 안드로이드폰 화면 보기 (scrcpy)
 * https://sean.tistory.com/60
+* [안드로이드폰 서버 만들기](https://www.youtube.com/watch?v=trjUbvSXfmc&t=12s)
+```sh
+# Android Debug Bridge version 1.0.41 (Version 36.0.2-14143358)
+brew install android-platform-tools
+adb --version
+# 핸드폰 성능 최적화를 위한 기능 백그라운드 프로세스 강제 종료 - 막기
+adb shell "device_config put activity_manager max_phantom_processes 2147483647"
+
+# scrcpy 3.3.4
+brew install scrcpy
+scrcpy --version
+
+# 안드로이드 개발자 설정
+# 설정 > 휴대전화 정보 > 소프트웨어 정보 > 빌드번호 10번 누르면 "개발자 옵션" 메뉴 나옴
+# 설정 > 개발자 옵션
+1. 화면 켜짐 상태 유지
+2. OEM 잠금 해제
+3. USB 디버깅
+4. 무선 디버깅
+5. 백그라운드 프로세스 수 제한 > 최대 4개 프로세스
+
+# USB 연결 후 핸드폰 확인
+adb devices
+
+# 화면 연결
+scrcpy
+```
