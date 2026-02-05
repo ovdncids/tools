@@ -289,6 +289,8 @@ scrcpy --version
 
 # USB 연결 후 핸드폰 확인
 adb devices
+# 가벼운 Terminal 연결
+adb shell
 
 # 화면 연결
 scrcpy
@@ -305,13 +307,17 @@ apt update
 apt upgrade
 apt install openssh
 passwd
-whoami
+whoami    # 사용자 아이디 u0_a348
 
 apt install termux-tools
 # Termux 애플리케이션이 백그라운드에서도 계속 돌게 만듬
 termux-wake-lock
 ifconfig
 sshd
+
+# 테더링 네트워크에서 Mac에서 ssh에 접근 할 수 없을 경우 (포트 포워딩, 하지만 USB-C 케이블을 뽑으면 포트 포워딩 종료됨)
+adb forward tcp:8022 tcp:8022
+ssh u0_a348@localhost -p 8022    # 접속 후에 폰을 닫아도 접속 유지됨, 포트 포워딩 때문인지 인터넷도 유지됨
 
 # Ubuntu 설치 (25.10)
 apt install proot-distro
@@ -321,3 +327,6 @@ proot-distro login ubuntu
 # 버전 확인
 lsb_release -a
 ```
+* [Ubuntu - user 생성](https://github.com/ovdncids/docker-curriculum/tree/master?tab=readme-ov-file#shell-%EC%A0%91%EC%86%8D)
+* NVM 설치
+
