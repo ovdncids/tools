@@ -264,8 +264,9 @@ Will execute the following actions > + New Action > Interface Control > Move or 
 ```
 
 ## 안드로이드폰 화면 보기 (scrcpy)
+* `TODO: scrcpy로 공장 초기화`
 * https://sean.tistory.com/60
-* [안드로이드폰 서버 만들기](https://www.youtube.com/watch?v=trjUbvSXfmc&t=12s)
+
 ```sh
 # Android Debug Bridge version 1.0.41 (Version 36.0.2-14143358)
 brew install android-platform-tools
@@ -291,4 +292,32 @@ adb devices
 
 # 화면 연결
 scrcpy
+```
+
+## 안드로이드폰 서버 만들기
+* https://www.youtube.com/watch?v=trjUbvSXfmc&t=12s0
+
+```sh
+# Termux 앱 설치 (Ubuntu 설치전에 가볍게 Terminal을 사용 할 수 있다. 제약이 큼)
+설정 > 애플리케이션 > Termux > 배터리 > 제한 없음
+
+apt update
+apt upgrade
+apt install openssh
+passwd
+whoami
+
+apt install termux-tools
+# Termux 애플리케이션이 백그라운드에서도 계속 돌게 만듬
+termux-wake-lock
+ifconfig
+sshd
+
+# Ubuntu 설치 (25.10)
+apt install proot-distro
+proot-distro install ubuntu
+# root 권한으로 로그인
+proot-distro login ubuntu
+# 버전 확인
+lsb_release -a
 ```
