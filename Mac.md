@@ -341,3 +341,11 @@ tmux attach -t shell1
 ```
 * [Ubuntu - user 생성](https://github.com/ovdncids/docker-curriculum/tree/master?tab=readme-ov-file#shell-%EC%A0%91%EC%86%8D)
 * https://github.com/nvm-sh/nvm
+
+### Next.js dev 실행
+```sh
+npm run dev
+# Unhandled Rejection: NodeError [SystemError]: A system error occurred: uv_interface_addresses returned Unknown system error 13 (Unknown system error 13)
+# 이런 오류가 발생하면
+npx next dev -H 127.0.0.1
+```
