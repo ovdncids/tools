@@ -305,7 +305,7 @@ scrcpy
 
 apt update
 apt upgrade
-apt install openssh
+apt install openssh    # 1024보다 이하의 포트는 사용 할 수 없으므로 'Termux의 openssh 라이브러리'가 8022로 설정함
 passwd
 whoami    # 사용자 아이디 u0_a348
 
@@ -314,6 +314,7 @@ apt install termux-tools
 termux-wake-lock
 ifconfig
 sshd
+pkill sshd
 
 # 테더링 네트워크에서 Mac에서 ssh에 접근 할 수 없을 경우 (포트 포워딩, 하지만 USB-C 케이블을 뽑으면 포트 포워딩 종료됨)
 adb forward tcp:8022 tcp:8022
@@ -326,7 +327,17 @@ proot-distro install ubuntu
 proot-distro login ubuntu
 # 버전 확인
 lsb_release -a
+
+# 백그라운드 Shell 관리
+apt install tmux
+# 새로운 Shell 생성
+tmux new -s shell1
+# 현재 Shell 백그라운드로 이동
+Ctrl + b d
+# 백그라운드 Shell 보기
+tmux list-sessions
+# 해당 백그라운드로 돌아가기
+tmux attach -t shell1
 ```
 * [Ubuntu - user 생성](https://github.com/ovdncids/docker-curriculum/tree/master?tab=readme-ov-file#shell-%EC%A0%91%EC%86%8D)
-* NVM 설치
-
+* https://github.com/nvm-sh/nvm
