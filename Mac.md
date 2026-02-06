@@ -349,3 +349,16 @@ npm run dev
 # 이런 오류가 발생하면
 npx next dev -H 127.0.0.1
 ```
+
+### VSCode server 설치 (웹에서 해당 사용자의 home 폴더 기준으로 VSCode 사용)
+```sh
+su - {사용자}
+curl -fsSL https://code-server.dev/install.sh | sh
+code-server --bind-addr 127.0.0.1:8000
+
+adb forward tcp:8000 tcp:8000
+http://localhost:8000
+
+# 패스워드 확인
+/home/{사용자}/.config/code-server/config.yaml
+```
