@@ -52,7 +52,7 @@ registry "http://localhost:8081/repository/npm-group/"
 
 * 이제 Proxy와 Hosted 둘다 사용가능하다.
 
-## `gradle build` 중 `gradle-8.14.3-bin.zip` 파일이 없다고 나올때
+## `gradle build` 중 `gradle-8.14.3-bin.zip` 파일을 Nexus에서 못 받을때
 * https://services.gradle.org/distributions
 * `gradle-8.14.3-bin.zip` 다운받고 해당 경로로 이동한다.
 
