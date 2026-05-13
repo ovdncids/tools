@@ -43,13 +43,22 @@ src > main > java > 오른쪽 클릭 > Mark Directory as > Sources Root
 ```
 
 ## Tomcat 프로젝트
-* File > Settings > Build, Execution, Deployment > Application Servers > + Tomcat Server > Tomcat 경로 선택
+* Settings > Build, Execution, Deployment > Application Servers > + Tomcat Server > Tomcat 경로 선택
 * {Tomcat 경로}/webapps/ROOT 폴더명 변경
 * Run > Edit Configurations... > + > Tomcat Server > Deployment > + > External Source... > 해당 프로젝트 선택 (해당 경로를 ROOT로 폴더명 변경해도 좋음)
 
 ### 라이브러리를 못 찾고 빨간색으로 표시 되는 경우
 ```sh
 Project Structure > Project Settings > Modules > 해당 프로젝트 > Dependencies > + > 2. Library... > Project Libraries > lib와 Tomcat
+```
+
+### Smart Tomcat (Community 버전에서 Tomcat 사용)
+* Settings > Plugins > SmartTomcat > 설치 후 InteilliJ 재실행
+```sh
+Catalina base: Tomcat server/conf 폴더를 복사해서 새로운 톰켓 설정을 생성 (자동 생성, 프로젝트에 .smarttomcat 폴더도 생성됨)
+Deployment directory: src/main/webapp (가장 중요)
+Use classpath of module: 해당 프로젝트 (자동 선택)
+Context path: /
 ```
 
 ## Git > Show History > Show Diff > 아주 이전 커밋과 비교할때
