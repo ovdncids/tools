@@ -329,6 +329,19 @@ git branch -r
 git branch -dr origin/브랜치
 ```
 
+## 이미 Origin에 올라간 특정 파일을 로컬에서만 무시하기
+```sh
+# a1.txt 무시
+git update-index --skip-worktree a1.txt
+
+# a1.txt 무시 해제
+git update-index --no-skip-worktree a1.txt
+
+# 무시된 파일 찾기
+git ls-files -v | grep '^[Sh]'
+```
+* ❕ a1.txt가 Orgin에서 수정되었다면 Pull 할때 a1.txt 오류 발생함
+
 ## Create Patch IntelliJ (서로 다른 로컬 git으로 커밋 복사)
 ```sh
 원복 로컬 > Git (창) > Log > 복사하고 싶은 커밋 > Create Patch (파일 저장 또는 클립보드)
