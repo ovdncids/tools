@@ -186,3 +186,6 @@ wsl --unregister Ubuntu
 ```cmd
 winget upgrade --all
 ```
+
+## 다음팟 플레이어 그림 파일 재생
+* 환경 설정 > 파일 연결 > 파일 열기에 표시되는 확장자 설정... > 비디오 > `png jpg jpeg gif` 
