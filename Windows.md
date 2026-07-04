@@ -187,5 +187,11 @@ wsl --unregister Ubuntu
 winget upgrade --all
 ```
 
+## 윈도우11이 블루스키린 떴을때 오류 찾기
+```cmd
+Win + x > 이벤트 뷰어 > Windows 로그 > 시스템 > 오류 > C:\WINDOWS\Minidump\070426-17343-01.dmp 비슷한 문구 확인 > D:\에 복사 (바로 열 수 없음)
+Microsoft Store > WinDbg 설치 > Open dump file > D:\070426-17343-01.dmp > `2: kd>` 입력창 > !analyze -v > 내용을 ChatGPT에 물어보기
+```
+
 ## 다음팟 플레이어 그림 파일 재생
 * 환경 설정 > 파일 연결 > 파일 열기에 표시되는 확장자 설정... > 비디오 > `png jpg jpeg gif` 
