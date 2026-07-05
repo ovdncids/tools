@@ -195,7 +195,7 @@ Microsoft Store > WinDbg 설치 > Open dump file > D:\070426-17343-01.dmp > `2: 
 
 ## NVIDIA 드라이버 깔끔 삭제 - DDU
 * https://www.wagnardsoft.com
-* 새로운 NVIDIA 드라이버 다운로드 > DDU 설치 > 인터넷 끄기 >  DDU 실행 및 NVIDIA 드라이버 삭제 > 재부팅 > 새로운 NVIDIA 드라이버 설치
+* 새로운 NVIDIA 드라이버 다운로드 > DDU 설치 > 인터넷 끄기 >  DDU 실행 및 NVIDIA 드라이버 삭제 > 재부팅 > 새로운 NVIDIA 드라이버 설치 > 재부팅 > 인터넷 켜기
 
 ## 다음팟 플레이어 그림 파일 재생
 * 환경 설정 > 파일 연결 > 파일 열기에 표시되는 확장자 설정... > 비디오 > `png jpg jpeg gif` 
