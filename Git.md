@@ -313,8 +313,8 @@ git reset --hard 커밋아이디
 git reflog 브랜치명
 
 # 삭제된 브랜치 살리기
-git checkout -b 브랜치명 HEAD@{번호}
-git checkout -b 브랜치명 커밋해시
+git checkout -b 새로운브랜치명 HEAD@{번호}
+git checkout -b 새로운브랜치명 커밋해시
 
 # 완료된 rebase 취소
 git reset HEAD@{번호}
