@@ -8,6 +8,7 @@
 Nexus > Settings > Repositories> Create Repository > npm (poxy)
 Name: npm-proxy
 Remote storage: https://registry.npmjs.org/
+# Remote storage: https://pypi.org/
 ```
 * http://localhost:8081/repository/npm-proxy/react
 
