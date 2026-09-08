@@ -85,3 +85,11 @@ always-auth=true
 ```yarnrc
 strict-ssl false
 ```
+
+## .npmrc
+```.npmrc
+strict-ssl=true
+cafile=./certs/root-ca.pem
+registry=https://{사내 Nexus}/repository/npm-registry
+```
+* `root-ca.pem` 파일은 .gitignore에 추가
