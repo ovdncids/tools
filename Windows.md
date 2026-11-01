@@ -115,7 +115,6 @@ sc query wuauserv
 
 ## NVM cmd 설치
 ```cmd
-
 @echo off
 chcp 65001 > nul
 
@@ -124,7 +123,7 @@ setlocal EnableDelayedExpansion
 
 set BASE_DIR=%~dp0
 @rem 사용자 변수 Path만 %USER_PATH%에 넣기
-for /f "tokens=2,*" %%a in ('reg query "HKCU\Environment" /v Path') do set USER_PATH=%%b
+for /f "tokens=2,*" %%a in ('reg query HKCU\Environment /v Path') do set USER_PATH=%%b
 set NVM_HOME=%BASE_DIR%nvm
 set NVM_SYMLINK=%BASE_DIR%nvm4w
 
@@ -136,7 +135,7 @@ choice /c 12 /n /m "Choose (1-2): "
 
 if errorlevel 2 (
     @rem 사용자 변수에 %NVM_HOME%나 %NVM_SYMLINK% 있으면 %NVM_HOME%, %NVM_SYMLINK% 삭제
-    echo %USER_PATH% | findstr /i /c:"%NVM_HOME%" /c:"%NVM_SYMLINK%" >nul
+    echo ;%USER_PATH%; | findstr /i /c:";%NVM_HOME%;" /c:";%NVM_SYMLINK%;" >nul
     if !errorlevel! == 0 (
         nvm off
 
@@ -144,10 +143,10 @@ if errorlevel 2 (
         reg delete HKCU\Environment /v NVM_SYMLINK /f
 
         set NEW_USER_PATH=
-        for %%a in ("%USER_PATH:;=";"%") do (
-            if not "%%~a" == "%NVM_HOME%" if not "%%~a" == "%NVM_SYMLINK%" if not "%%~a" == "" (
-                set "NEW_USER_PATH=!NEW_USER_PATH!;%%~a"
-            )
+        for %%a in ("%USER_PATH:;=" "%") do (
+          if not %%~a == %%NVM_HOME%% if not %%~a == %%NVM_SYMLINK%% if not "%%~a" == "" (
+            set "NEW_USER_PATH=!NEW_USER_PATH!%%~a;"
+          )
         )
         setx PATH "!NEW_USER_PATH!"
     )
@@ -158,27 +157,31 @@ if errorlevel 2 (
 )
 
 @rem 사용자 변수에 %NVM_HOME% 없으면 %NVM_HOME%, %NVM_SYMLINK% 추가
-echo %USER_PATH% | find /i "%NVM_HOME%" >nul
+echo ;%USER_PATH%; | find /i ";%NVM_HOME%;" >nul
 if !errorlevel! == 1 (
-    setx NVM_HOME "%NVM_HOME%"
-    setx NVM_SYMLINK "%NVM_SYMLINK%"
-    setx PATH "%USER_PATH%;%NVM_HOME%;%NVM_SYMLINK%"
+    setx NVM_HOME %NVM_HOME%
+    setx NVM_SYMLINK %NVM_SYMLINK%
+    setx PATH "%USER_PATH%%%NVM_HOME%%;%%NVM_SYMLINK%%;"
     set PATH=%NVM_HOME%;%NVM_SYMLINK%;
 
     @rem NVM 설정
     del /q %NVM_HOME%\settings.txt
-    echo "root: %NVM_HOME%" > %NVM_HOME%\settings.txt
-    echo "path: %NVM_SYMLINK%" >> %NVM_HOME%\settings.txt
+    echo root: %NVM_HOME%> %NVM_HOME%\settings.txt
+    echo path: %NVM_SYMLINK%>> %NVM_HOME%\settings.txt
 )
 
 call nvm ls
 @echo on
+
 call nvm use 22
 @echo on
+
 call node -v
 @echo on
+
 call npm -v
 @echo on
+
 @echo Install Completed
 pause
 ```
