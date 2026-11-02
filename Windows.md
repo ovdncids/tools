@@ -162,7 +162,7 @@ if !errorlevel! == 1 (
     setx NVM_HOME %NVM_HOME%
     setx NVM_SYMLINK %NVM_SYMLINK%
     setx PATH "%USER_PATH%%%NVM_HOME%%;%%NVM_SYMLINK%%;"
-    set PATH=%NVM_HOME%;%NVM_SYMLINK%;
+    set PATH=%USER_PATH%%NVM_HOME%;%NVM_SYMLINK%;
 
     @rem NVM 설정
     del /q %NVM_HOME%\settings.txt
